@@ -1,0 +1,102 @@
+﻿@{
+    Layout = null;
+}
+@using FiskePriser.Models
+@using Newtonsoft.Json
+@using System.Web.UI.WebControls
+@model FiskePriser.Models.Trip
+<h2>MyTrip</h2>
+
+@using (Ajax.BeginForm("AddFish", "Trip", new AjaxOptions { UpdateTargetId = "AllPage", InsertionMode = InsertionMode.Replace }))
+{
+    <div style="visibility: hidden">
+        @{
+    var mmm = JsonConvert.SerializeObject(Model.Fangst);
+        }
+        @Html.TextBoxFor(model => model.CurFangst, new { @Value = mmm })
+    </div>
+    <div>
+        <div id="firstDiv" class="noPadding">
+            @Html.Label("Type: ")
+            <br />
+            <div id="FishBtn">
+                @Html.HiddenFor(s => s.CurFishId, new { @Id = "curId" })
+                @Html.Label("Vælg Fisk", new { @Id = "FishTxt" })
+            </div>
+        </div>
+        <div id="secondDiv" class="noPadding">
+            @Html.Label("Sort: ")
+            <br />
+            <div id="FishSort">
+                @Html.HiddenFor(s => s.CurFishSort, new { @Id = "curFishSort" })
+                @Html.Label("Vælg Sort", new { @Id = "FishSortLabel" })
+            </div>
+        </div>
+        <div id="thirdDiv" class="noPadding">
+                        @Html.Label("Mængde (kg): ")
+                        <br />
+            @Html.TextBoxFor(model => model.CurFishAmount, new { @Value = "200", @type = "Numeric" })
+        </div>
+        <div id="fourthDiv" class="noPadding">
+                              <button class="button" id="Add" type="submit"><span class="glyphicon glyphicon-check" style="font-size: 3.2em;"></span></button>
+                              
+                          </div>
+    </div>
+    
+}
+
+<div id="FishList">
+    @Html.Partial("FishListPartial", Model)
+</div>
+
+@using (Html.BeginForm("SaveFishes", "Trip"))
+{
+
+    <div style="visibility: hidden">
+        @{
+            var mmm = JsonConvert.SerializeObject(Model.Fangst);
+        }
+        @Html.TextBoxFor(model => model.CurFangst, new { @Value = mmm })
+    </div>
+    
+    <input class="button" id="Gem" type="submit" value="Gem" />
+    <input class="button" id="Slet" type="submit" value="Slet" />
+}
+
+<div id="FishDialog">
+    @Html.Partial("FishListSelect", Model.AlleArters)
+</div>
+
+<div id="FishSortDialog">
+    @Html.Partial("FishSortSelect", new List<int> {1,2,3,4,5})
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#FishDialog").dialog({
+            autoOpen: false,
+            height: "auto",
+            width: "auto",
+            title: "Vælg fiskeart",
+            resizable: false,
+            modal: true,
+            draggable: false
+        });
+        $("#FishSortDialog").dialog({
+            autoOpen: false,
+            height: "auto",
+            width: "auto",
+            title: "Vælg Sort",
+            resizable: false,
+            modal: true,
+            draggable: false
+        });
+        $("#FishBtn").click(function () {
+            $("#FishDialog").dialog("open");
+        });
+        $("#FishSort").click(function () {
+            $("#FishSortDialog").dialog("open");
+        });
+
+    });
+</script>

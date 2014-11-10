@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Marcellum</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/de/EntityFramework.resources.dll">
+      <publishTime>06/10/2014 18:41:46</publishTime>
+    </File>
+    <File Include="bin/de/EntityFramework.SqlServer.resources.dll">
+      <publishTime>06/10/2014 18:41:46</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>06/10/2014 17:24:10</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>06/10/2014 17:24:10</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServerCompact.dll">
+      <publishTime>06/10/2014 17:24:10</publishTime>
+    </File>
+    <File Include="bin/es/EntityFramework.resources.dll">
+      <publishTime>06/10/2014 18:41:46</publishTime>
+    </File>
+    <File Include="bin/es/EntityFramework.SqlServer.resources.dll">
+      <publishTime>06/10/2014 18:41:46</publishTime>
+    </File>
+    <File Include="bin/FiskePriser.dll">
+      <publishTime>10/29/2014 16:00:15</publishTime>
+    </File>
+    <File Include="bin/fr/EntityFramework.resources.dll">
+      <publishTime>06/10/2014 18:41:48</publishTime>
+    </File>
+    <File Include="bin/fr/EntityFramework.SqlServer.resources.dll">
+      <publishTime>06/10/2014 18:41:48</publishTime>
+    </File>
+    <File Include="bin/HtmlAgilityPack.dll">
+      <publishTime>10/08/2014 20:33:52</publishTime>
+    </File>
+    <File Include="bin/it/EntityFramework.resources.dll">
+      <publishTime>06/10/2014 18:41:48</publishTime>
+    </File>
+    <File Include="bin/it/EntityFramework.SqlServer.resources.dll">
+      <publishTime>06/10/2014 18:41:48</publishTime>
+    </File>
+    <File Include="bin/ja/EntityFramework.resources.dll">
+      <publishTime>06/10/2014 18:41:50</publishTime>
+    </File>
+    <File Include="bin/ja/EntityFramework.SqlServer.resources.dll">
+      <publishTime>06/10/2014 18:41:50</publishTime>
+    </File>
+    <File Include="bin/ko/EntityFramework.resources.dll">
+      <publishTime>06/10/2014 18:41:52</publishTime>
+    </File>
+    <File Include="bin/ko/EntityFramework.SqlServer.resources.dll">
+      <publishTime>06/10/2014 18:41:52</publishTime>
+    </File>
+    <File Include="bin/MoreLinq.dll">
+      <publishTime>10/29/2014 14:16:03</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>10/26/2014 10:53:57</publishTime>
+    </File>
+    <File Include="bin/ru/EntityFramework.resources.dll">
+      <publishTime>06/10/2014 18:41:52</publishTime>
+    </File>
+    <File Include="bin/ru/EntityFramework.SqlServer.resources.dll">
+      <publishTime>06/10/2014 18:41:52</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>10/06/2014 15:10:43</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>10/06/2014 15:10:43</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>10/06/2014 15:10:43</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>10/06/2014 15:10:43</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>10/06/2014 15:10:43</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>10/06/2014 15:10:43</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/EntityFramework.resources.dll">
+      <publishTime>06/10/2014 18:41:54</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/EntityFramework.SqlServer.resources.dll">
+      <publishTime>06/10/2014 18:41:54</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/EntityFramework.resources.dll">
+      <publishTime>06/10/2014 18:41:56</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/EntityFramework.SqlServer.resources.dll">
+      <publishTime>06/10/2014 18:41:56</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>10/06/2014 15:14:00</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>10/06/2014 15:14:00</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>10/26/2014 12:34:40</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>10/06/2014 15:14:00</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>10/06/2014 15:14:00</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>10/06/2014 15:14:00</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>10/06/2014 15:13:59</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/06/2014 15:10:43</publishTime>
+    </File>
+    <File Include="Models/DBConnection.edmx.diagram">
+      <publishTime>10/08/2014 19:53:25</publishTime>
+    </File>
+    <File Include="Models/DBConnection.edmx.sql">
+      <publishTime>10/08/2014 19:50:42</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>10/29/2014 14:16:04</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>10/06/2014 15:13:59</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>10/06/2014 15:13:59</publishTime>
+    </File>
+    <File Include="Scripts/Chart.min.js">
+      <publishTime>10/06/2014 17:21:50</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>10/06/2014 15:14:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>10/06/2014 15:14:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>10/06/2014 15:14:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.js">
+      <publishTime>10/26/2014 12:00:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>10/26/2014 12:00:24</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>10/06/2014 15:14:02</publishTime>
+    </File>
+    <File Include="Views/Admin/Index.cshtml">
+      <publishTime>10/08/2014 20:14:17</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>10/29/2014 15:58:59</publishTime>
+    </File>
+    <File Include="Views/Shared/FishListPartial.cshtml">
+      <publishTime>10/26/2014 12:29:28</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>10/29/2014 15:58:17</publishTime>
+    </File>
+    <File Include="Views/Trip/Index.cshtml">
+      <publishTime>10/27/2014 10:03:42</publishTime>
+    </File>
+    <File Include="Views/Trip/Trip.cshtml">
+      <publishTime>10/27/2014 10:52:59</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>10/06/2014 15:10:43</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>10/06/2014 15:13:55</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/29/2014 16:00:16</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

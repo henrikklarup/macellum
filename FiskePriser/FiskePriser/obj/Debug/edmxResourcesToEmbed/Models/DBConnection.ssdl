@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBConnection.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="DBConnectionStoreContainer">
+    <EntitySet Name="Fisks" EntityType="DBConnection.Store.Fisks" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Arters" EntityType="DBConnection.Store.Arters" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Havns" EntityType="DBConnection.Store.Havns" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BenzinPris" EntityType="DBConnection.Store.BenzinPris" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FiskArter" Association="DBConnection.Store.FiskArter">
+      <End Role="Fisk" EntitySet="Fisks" />
+      <End Role="Arter" EntitySet="Arters" />
+    </AssociationSet>
+    <AssociationSet Name="FiskHavne" Association="DBConnection.Store.FiskHavne">
+      <End Role="Fisk" EntitySet="Fisks" />
+      <End Role="Havne" EntitySet="Havns" />
+    </AssociationSet>
+    <AssociationSet Name="BenzinPrisHavne" Association="DBConnection.Store.BenzinPrisHavne">
+      <End Role="BenzinPris" EntitySet="BenzinPris" />
+      <End Role="Havne" EntitySet="Havns" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Fisks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AvgPrice" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MaxPrice" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Sort" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Amount" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Dato" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Arters_Id" Type="int" Nullable="false" />
+    <Property Name="Havne_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Arters">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Navn" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Havns">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Navn" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BenzinPris">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Price" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Dato" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Havne_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FiskArter">
+    <End Role="Fisk" Type="DBConnection.Store.Fisks" Multiplicity="*" />
+    <End Role="Arter" Type="DBConnection.Store.Arters" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Arter">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Fisk">
+        <PropertyRef Name="Arters_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FiskHavne">
+    <End Role="Fisk" Type="DBConnection.Store.Fisks" Multiplicity="*" />
+    <End Role="Havne" Type="DBConnection.Store.Havns" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Havne">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Fisk">
+        <PropertyRef Name="Havne_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="BenzinPrisHavne">
+    <End Role="BenzinPris" Type="DBConnection.Store.BenzinPris" Multiplicity="*" />
+    <End Role="Havne" Type="DBConnection.Store.Havns" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Havne">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BenzinPris">
+        <PropertyRef Name="Havne_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

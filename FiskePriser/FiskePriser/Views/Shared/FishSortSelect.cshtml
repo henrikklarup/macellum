@@ -1,0 +1,29 @@
+﻿@using FiskePriser.Models
+@model List<int>
+    
+
+<table id="FishSortTable">
+    <tr>
+        @foreach (var x in Model)
+        {
+            <td style="text-align: center; padding: 10px;">
+                @Html.HiddenFor(m=>x, new{@Id="x_Id"})
+                @Html.LabelFor(m=>x,x.ToString(), new {@Id="x_Navn"})
+            </td>
+        }
+    </tr>
+</table>
+
+
+<script>
+    $(function () {
+        $('#FishSortTable td').click(function () {
+            var x_id = $(this).find('#x_Id').get(0).value;
+            var x_name = $(this).find('#x_Navn').text();
+            console.log(x_id);
+            $("#curFishSort").val(x_id);
+            $("#FishSortLabel").text(x_name);
+            $("#FishSortDialog").dialog("close");
+        });
+    });
+</script>

@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "MyTrip";
+}
+@using FiskePriser.Models
+@using Newtonsoft.Json
+@model FiskePriser.Models.Trip
+           
+
+
+<script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.js")" type="text/javascript"></script>
+<div id="AllPage">
+    @Html.Partial("../Trip/Trip")
+</div>

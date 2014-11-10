@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DBConnection.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="DBConnectionStoreContainer">
+    <EntitySet Name="Fisks" EntityType="DBConnection.Store.Fisks" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Arters" EntityType="DBConnection.Store.Arters" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Havns" EntityType="DBConnection.Store.Havns" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BenzinPris" EntityType="DBConnection.Store.BenzinPris" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FiskArter" Association="DBConnection.Store.FiskArter">
+      <End Role="Fisk" EntitySet="Fisks" />
+      <End Role="Arter" EntitySet="Arters" />
+    </AssociationSet>
+    <AssociationSet Name="FiskHavne" Association="DBConnection.Store.FiskHavne">
+      <End Role="Fisk" EntitySet="Fisks" />
+      <End Role="Havne" EntitySet="Havns" />
+    </AssociationSet>
+    <AssociationSet Name="BenzinPrisHavne" Association="DBConnection.Store.BenzinPrisHavne">
+      <End Role="BenzinPris" EntitySet="BenzinPris" />
+      <End Role="Havne" EntitySet="Havns" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Fisks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AvgPrice" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MaxPrice" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Sort" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Amount" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Dato" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Arters_Id" Type="int" Nullable="false" />
+    <Property Name="Havne_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Arters">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Navn" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Havns">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Navn" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BenzinPris">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Price" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Dato" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Havne_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FiskArter">
+    <End Role="Fisk" Type="DBConnection.Store.Fisks" Multiplicity="*" />
+    <End Role="Arter" Type="DBConnection.Store.Arters" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Arter">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Fisk">
+        <PropertyRef Name="Arters_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FiskHavne">
+    <End Role="Fisk" Type="DBConnection.Store.Fisks" Multiplicity="*" />
+    <End Role="Havne" Type="DBConnection.Store.Havns" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Havne">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Fisk">
+        <PropertyRef Name="Havne_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="BenzinPrisHavne">
+    <End Role="BenzinPris" Type="DBConnection.Store.BenzinPris" Multiplicity="*" />
+    <End Role="Havne" Type="DBConnection.Store.Havns" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Havne">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BenzinPris">
+        <PropertyRef Name="Havne_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="DBConnection" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="DBConnectionContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Fisks" EntityType="DBConnection.Fisk" />
+          <EntitySet Name="Arters" EntityType="DBConnection.Arter" />
+          <AssociationSet Name="FiskArter" Association="DBConnection.FiskArter">
+            <End Role="Fisk" EntitySet="Fisks" />
+            <End Role="Arter" EntitySet="Arters" />
+          </AssociationSet>
+          <EntitySet Name="Havns" EntityType="DBConnection.Havn" />
+          <AssociationSet Name="FiskHavne" Association="DBConnection.FiskHavne">
+            <End Role="Fisk" EntitySet="Fisks" />
+            <End Role="Havne" EntitySet="Havns" />
+          </AssociationSet>
+          <EntitySet Name="BenzinPris" EntityType="DBConnection.BenzinPris" />
+          <AssociationSet Name="BenzinPrisHavne" Association="DBConnection.BenzinPrisHavne">
+            <End Role="BenzinPris" EntitySet="BenzinPris" />
+            <End Role="Havne" EntitySet="Havns" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Fisk">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AvgPrice" Type="String" Nullable="false" />
+          <Property Name="MaxPrice" Type="String" Nullable="false" />
+          <Property Name="Sort" Type="String" Nullable="false" />
+          <Property Name="Amount" Type="String" Nullable="false" />
+          <NavigationProperty Name="Arters" Relationship="DBConnection.FiskArter" FromRole="Fisk" ToRole="Arter" />
+          <NavigationProperty Name="Havne" Relationship="DBConnection.FiskHavne" FromRole="Fisk" ToRole="Havne" />
+          <Property Name="Dato" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Arter">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Navn" Type="String" Nullable="false" />
+          <NavigationProperty Name="Fisk" Relationship="DBConnection.FiskArter" FromRole="Arter" ToRole="Fisk" />
+        </EntityType>
+        <Association Name="FiskArter">
+          <End Type="DBConnection.Fisk" Role="Fisk" Multiplicity="*" />
+          <End Type="DBConnection.Arter" Role="Arter" Multiplicity="1" />
+        </Association>
+        <EntityType Name="Havn">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Navn" Type="String" Nullable="false" />
+          <NavigationProperty Name="Fisk" Relationship="DBConnection.FiskHavne" FromRole="Havne" ToRole="Fisk" />
+          <NavigationProperty Name="BenzinPri" Relationship="DBConnection.BenzinPrisHavne" FromRole="Havne" ToRole="BenzinPris" />
+        </EntityType>
+        <Association Name="FiskHavne">
+          <End Type="DBConnection.Fisk" Role="Fisk" Multiplicity="*" />
+          <End Type="DBConnection.Havn" Role="Havne" Multiplicity="1" />
+        </Association>
+        <EntityType Name="BenzinPris">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Price" Type="String" Nullable="false" />
+          <NavigationProperty Name="Havne" Relationship="DBConnection.BenzinPrisHavne" FromRole="BenzinPris" ToRole="Havne" />
+          <Property Name="Dato" Type="String" Nullable="false" />
+        </EntityType>
+        <Association Name="BenzinPrisHavne">
+          <End Type="DBConnection.BenzinPris" Role="BenzinPris" Multiplicity="1" />
+          <End Type="DBConnection.Havn" Role="Havne" Multiplicity="1" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBConnectionStoreContainer" CdmEntityContainer="DBConnectionContainer">
+    <EntitySetMapping Name="Fisks">
+      <EntityTypeMapping TypeName="IsTypeOf(DBConnection.Fisk)">
+        <MappingFragment StoreEntitySet="Fisks">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AvgPrice" ColumnName="AvgPrice" />
+          <ScalarProperty Name="MaxPrice" ColumnName="MaxPrice" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Dato" ColumnName="Dato" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Arters">
+      <EntityTypeMapping TypeName="IsTypeOf(DBConnection.Arter)">
+        <MappingFragment StoreEntitySet="Arters">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Navn" ColumnName="Navn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Havns">
+      <EntityTypeMapping TypeName="IsTypeOf(DBConnection.Havn)">
+        <MappingFragment StoreEntitySet="Havns">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Navn" ColumnName="Navn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BenzinPris">
+      <EntityTypeMapping TypeName="IsTypeOf(DBConnection.BenzinPris)">
+        <MappingFragment StoreEntitySet="BenzinPris">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Dato" ColumnName="Dato" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FiskArter" TypeName="DBConnection.FiskArter" StoreEntitySet="Fisks">
+      <EndProperty Name="Arter">
+        <ScalarProperty Name="Id" ColumnName="Arters_Id" />
+      </EndProperty>
+      <EndProperty Name="Fisk">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FiskHavne" TypeName="DBConnection.FiskHavne" StoreEntitySet="Fisks">
+      <EndProperty Name="Havne">
+        <ScalarProperty Name="Id" ColumnName="Havne_Id" />
+      </EndProperty>
+      <EndProperty Name="Fisk">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="BenzinPrisHavne" TypeName="DBConnection.BenzinPrisHavne" StoreEntitySet="BenzinPris">
+      <EndProperty Name="Havne">
+        <ScalarProperty Name="Id" ColumnName="Havne_Id" />
+      </EndProperty>
+      <EndProperty Name="BenzinPris">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
