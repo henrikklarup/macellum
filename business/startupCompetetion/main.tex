@@ -1,0 +1,188 @@
+\documentclass[a4paper,10pt,oneside,fleqn]{article}
+\RequirePackage{fullpage} % Small margins.
+\setlength{\parindent}{0pt} % Default is 15pt.
+
+%%% Input encoding and various packages:
+\RequirePackage[utf8]{inputenc} % The use of æ, ø and å.
+\RequirePackage[T1]{fontenc} % Hyphenation of words containing æ. ø and å.
+\RequirePackage{acronym} % Acronym handling.
+\RequirePackage{amsmath,amsfonts,amssymb} % Math package.
+\RequirePackage{listings}
+\RequirePackage{cancel} % Ain't quite sure what this one does..
+\RequirePackage{mdwlist} % Allows the use of \tightlist
+
+%%% Tables in \infty shades of grey.
+\RequirePackage[table]{xcolor}
+\definecolor{lightblue}{rgb}{0.88,0.91,1.0}
+\RequirePackage{array,booktabs} % Tables.
+
+%%% Enabling the "draft" on the pages to show that it is only a draft.
+\RequirePackage{draftwatermark}
+\SetWatermarkScale{3}
+\SetWatermarkColor{lightblue}
+\SetWatermarkText{macellum.dk}
+
+%%% Redefine vectors to be bold.
+\let\oldhat\hat
+\renewcommand{\vec}[1]{\boldsymbol{#1}}
+\renewcommand{\hat}[1]{\oldhat{\mathbf{#1}}}
+
+%%% Various.
+\DeclareUnicodeCharacter{00A0}{~} % Removes an OSX generated character.
+
+\begin{document}
+\author{Rasmus L. Christensen \& Henrik Klarup}
+\title{Venture Cup\\
+macellum.dk\\
+Fish Auction Price Visualization}
+\date{\today}
+\maketitle
+\begin{centering}
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.3\textwidth]{aaulogo.pdf}
+	\label{fig:aauLOGO}
+\end{figure}	
+\end{centering}
+
+\cleardoublepage
+
+\tableofcontents
+
+\cleardoublepage
+
+\section{Executive Summary (0.5-1 page)}
+Two main cost factors in modern day demersal fishing. Fuel costs and the price they obtain for their fish.
+
+\section{Product and Service (2-3 pages)}
+Macellum.dk aims to deliver a data visualization tool for fishermen in and around the northern sea. The tool is aimed at delivering up-to-date prices of the cargo hold, at the large fishing-harbours in nothern Europe. 
+
+\subsection{Customer Pain}
+Today, the fishermen obtain prices of their fish through either calling the buyers directly, or through an internet service called "Pefa". The main problem about "Pefa", is that the fish prices are given in a large table, and often given per kilo of the respective fish. 
+
+These two methods have their advantages and disadvantages. The main advantage is that the fish prices are up-to-date, and they can see the price of one kilo at the price it is being traded at on the floor. However, to calculate how much they can obtain from delivering their cargo at one specific harbour, requires them to do tedious calculations of each an every single sort of their fish. This is the main concern, and often - the fishermen are paid lower prices for their fish, than what they could have gotten, should they have chosen another harbour. 
+
+\subsection{Business Idea}
+The business idea have been divided into several phases, as each of them might prove viable to the individual fisheries.
+
+\subsubsection{Phase 1, Total Price of Catch}
+Macellum.dk plans have developed a web-portal, in which fishermen can enter their catch (specie, quality and amount) - and then the portal updates it self on the current auction prices of the fish, and provides the skipper with an overview of the net-worth of his cargo, at the major ports in and around the northern sea. 
+
+\subsubsection{Phase 2, Automatic Total Price of Catch}
+The developed portal, will obtain information on the catch by using the already installed system aboard the newer vessels. This system automatically weighs the fish and the fishermen just have to classify them. All is logged and stored in the vessels log system. These informations could be parsed to the web-interface, which then automatically updates the net worth of the cargo hold, without the fishermen having to do anything. 
+
+\subsubsection{Phase 3, Total Price of Journey}
+Phase 3, aims to include the fuel costs at the individual harbours, and simply subtract the amount of fuel used during the journey, from the net-worth of the cargo. This could potentially lead to interesting findings for the skippers, as the fish prices might for example not be very high in Thyborøn, but if the fuel prices are very low, the net worth might be higher - should he choose to follow our advice. 
+
+\subsubsection{Phase 4, Total Price of Journey + Estimated Price of Fish Tomorrow}
+This project aims to deploy mathematical models on the fish prices. It is possible to obtain the auction prices of fish through the last 10 years, and it is thus possible to develop a model that estimates the price the skipper can obtain for his fish tomorrow. This will give a better overview to the skipper, as he cannot sell his fish "here and now", due to logistical reasons. 
+
+\subsubsection{Phase 5, Smart System for Auction Price Information}
+This phase aims at developing another online web-portal from which the auction prices of different fish are being entered. The main purpose is to streamline the way in which this information is gathered, and thus make it easier for macellum.dk to obtain the information - but also for the fishermen who only deliver locally, to obtain the prices they need. 
+
+
+\subsubsection{Phase 6, Combine the Two}
+When the above are combine, the system will be totally self-sufficient. 
+
+\subsection{Value Proposition}
+The decision to either buy or not buy our product will have to be weighed up against the fisherman having his own calculations, or spend a rather small amount on a system that does it for him,
+
+\subsection{Idea Protection}
+First on the market. 
+
+\section{Market and Costumer (2-3 pages)}
+\subsection{Customer Profile}
+\subsection{Testing}
+\subsection{Market}
+Denmark -> England -> Holland -> Germany
+
+France, Spain, Italy.
+
+Potentially Greenland, Canada and America.
+
+\section{Industry and Competetion (1-2 pages)}
+Kort indledning til hvordan industrien fungerer i de forskellige lande. 
+
+\subsection{Competetion}
+The main competitors of macellum, are the danish collaboration between auction houses PEFA.com, the dutch auctions. 
+
+However, they do not as such pose a direct threat, as none of them deliver systems such as this. However, they might be disturbed by this sudden flow of information to the fishermen. As they all of the sudden obtain information which they previously haven't had the ability to get. 
+
+
+
+\subsection{Competetive Advantages}
+
+
+\subsection{Strategic Partners}
+Fishermens unions. 
+The danish government.
+Banks and other people with an intereset in financial analysis 
+
+\section{People and Organization (1-2 pages)}
+The organization is simple, and there are 3 people involved.
+\begin{enumerate}
+	\item Rasmus Lundgaard Christensen, Industrial PhD Student at Lodam electronics A/S and Aalborg University.
+	\item Henrik Klarup, Master Student, Software, Aalborg University.
+	\item Frits Lundgaard Christensen, Retired Fishermen, Hvide Sande (external consultant).
+\end{enumerate}
+ 
+
+\section{Money and feasibility (1-3 pages)}
+\subsection{Business Model}
+As with the business plan, the model can also be divided into three phases. 
+\subsubsection{Phase 1, Only the Fishermen}
+The business model is plain and simple. To use our service, you pay a monthly fee of 250 euros. This will give you access to the web-site which will be kept up to date. 
+
+\subsubsection{Phase 2, The Fishermen and the Buyers}
+Once the company makes enough money to hire one or two software developers fulltime, the extensions of the homepage/application will be sought developed. The plan of this phase, is to implement a solution where the buyers can go and check the prices of fish at various harbours, based on the reports from the individual vessels cargo hold. This will allow the buyers to go where the prices are lowest, and could potentially alter the market. 
+
+\subsubsection{Phase 3, The Fishermen, the Buyers and the Auction Houses}
+Lastly, a collection of all the prices could prove viable for the auction houses, as some of the auction houses might attract several more costumers by have a "sale" on fish.
+
+At inkludere auktionshusene så man får en samlet oversigt over hvad fiskene koster de forskellige steder.
+
+\subsection{Economies of scale}
+Skalérbarheden af projektet. 
+
+The main issue with scalability, is the server storage which should be devised so it does not run out of 
+
+\subsection{Financing}
+The financing of the project can be made in two ways. One, we develop on the system as we have done till now, and get the system tested at sea (through contacts of Frits Christensen), and then spread the system over social medias and Fiskerforum.dk (through contacts of Frits Christensen). If the word spreads in the fishing community that there is a possible project - they will come running and want to buy the product. 
+
+The other way, is to find an investor that is willing to invest some money in the project, and in return be a part owner of the system. This will allow a more rapid development of the project, and a quicker way for the project to be self sustaining. In \ref{sec:budget} a tentative budget have been made.
+
+\subsection{Risk Analysis}
+There are several risks involved in this project. The main risk stemes from the fishermen themselves. The fishing business have always been very conservative to change, and suddenly introducing a new digital system can cause them to be running away screaming. However, the few fishermen we have interviewed have actually found the idea good, and couldn't wait to get their hands on a copy. 
+
+The main problem with the fishing industry, is that stuff needs to work, and it needs to work ALWAYS. If it doesn't they'll botch together a solution themselves, and don't really care wether the solution you've made is good or not. It is therefore of uttermost importance that the homepage always functions, and that the amount of downtime is kept at a bare minimum. T
+
+
+\section{Implementation (1-2 pages)}
+\subsection{Implementation Plan}
+Beskriv de forskellige faser af implementationen - og hvornår vi ser at de bliver implementeret .
+
+\subsection{Marketing and sales}
+Marketing is handled on various fora for fishermen, primarily to be carried out at annual meetings for the fishermen, as this is a tool that is beneficial for the business as a whole, we are guaranteed an in on these meetings. 
+
+
+\section{Budget (1 page)}
+\label{sec:budget}
+\begin{center}
+\rowcolors{1}{white}{lightblue}
+\begin{tabular}{l*{4}{l}l}
+Description 	         									& Budget\\			
+\hline
+Development costs (salary, software, etc.) 					& 192.000 kr.\\
+Testing 							 						& 10.000 kr.\\
+Housing / Office Costs 		 								& 30.000 kr.\\
+Server and Hardware 		 								& 15.000 kr.\\
+Internet Connection 										& 10.000 kr.\\
+Phone 														&  5.000 kr.\\
+Hosting Services 											&  1.000 kr.\\
+Thrane \& Thrane Internet@Sea System 						& 10.000 kr.\\
+\hline
+\textbf{Total} 												& 273.000 kr.
+\end{tabular}
+\end{center}
+
+\end{document}
