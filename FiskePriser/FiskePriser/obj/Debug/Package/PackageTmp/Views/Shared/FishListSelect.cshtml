@@ -1,24 +1,32 @@
-﻿@using FiskePriser.Models
+﻿@using Macellum.Models
 @model List<Arter>
     
 
 <table id="FishListTable">
-    @{ var a = 0;}
+    @{
+        var a = 0;
+        var first = true;
+    }
     <tr>
-    @foreach (var x in Model)
-    {
-        <td style="text-align: center; padding: 10px;">
-            @Html.HiddenFor(m=>x.Id)
-            @Html.LabelFor(m=>x.Navn,x.Navn)
-        </td>
-
-        a++;
-        
-        if (a == 5)
+        @foreach (var x in Model)
         {
-            a = 0;
-            @:</tr>
-            @:<tr>
+            <td style="text-align: center; padding: 10px;">
+                @Html.HiddenFor(m=>x.Id)
+                @Html.LabelFor(m=>x.Navn,x.Navn, new {@Id="x_Navn"})
+            </td>
+
+            a++;
+        
+            if (a == 5)
+            {
+                a = 0;
+                @:</tr>
+                if (first)
+                {
+                    first = false;
+                    @:<tr class="break"><td colspan="6"></td></tr>
+                }
+                @:<tr>
         }
     }
     </tr>
@@ -28,9 +36,12 @@
 <script>
     $(function () {
         $('#FishListTable td').click(function () {
-            var x = $(this).find('#x_Id').get(0).value;
-            console.log(x);
-            $(this).css('background','red');
+            var xId = $(this).find('#x_Id').get(0).value;
+            var xName = $(this).find('#x_Navn').text();
+            console.log(xId);
+            $("#curId").val(xId);
+            $("#FishTxt").text(xName);
+            $("#FishDialog").dialog("close");
         });
     });
 </script>

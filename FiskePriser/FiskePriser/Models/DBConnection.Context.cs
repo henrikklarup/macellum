@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FiskePriser.Models
+namespace Macellum.Models
 {
     using System;
     using System.Data.Entity;
@@ -29,5 +29,10 @@ namespace FiskePriser.Models
         public virtual DbSet<Arter> Arters { get; set; }
         public virtual DbSet<Havn> Havns { get; set; }
         public virtual DbSet<BenzinPris> BenzinPris { get; set; }
+        public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Password> Passwords { get; set; }
+        public virtual DbSet<Role> Roles { get; set; }
+        public virtual DbSet<Trip> Trips { get; set; }
+        public virtual DbSet<ActiveSessionId> ActiveSessionIds { get; set; }
     }
 }

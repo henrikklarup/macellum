@@ -38,6 +38,49 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="IsTypeOf(DBConnection.User)">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Passwords">
+      <EntityTypeMapping TypeName="IsTypeOf(DBConnection.Password)">
+        <MappingFragment StoreEntitySet="Passwords">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="IsTypeOf(DBConnection.Role)">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Trips">
+      <EntityTypeMapping TypeName="IsTypeOf(DBConnection.Trip)">
+        <MappingFragment StoreEntitySet="Trips">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Open" ColumnName="Open" />
+          <ScalarProperty Name="FishList" ColumnName="FishList" />
+          <ScalarProperty Name="Dato" ColumnName="Dato" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ActiveSessionIds">
+      <EntityTypeMapping TypeName="IsTypeOf(DBConnection.ActiveSessionId)">
+        <MappingFragment StoreEntitySet="ActiveSessionIds">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <AssociationSetMapping Name="FiskArter" TypeName="DBConnection.FiskArter" StoreEntitySet="Fisks">
       <EndProperty Name="Arter">
         <ScalarProperty Name="Id" ColumnName="Arters_Id" />
@@ -59,6 +102,30 @@
         <ScalarProperty Name="Id" ColumnName="Havne_Id" />
       </EndProperty>
       <EndProperty Name="BenzinPris">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UserPassword" TypeName="DBConnection.UserPassword" StoreEntitySet="Users">
+      <EndProperty Name="Password">
+        <ScalarProperty Name="Id" ColumnName="Password_Id" />
+      </EndProperty>
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UserRole" TypeName="DBConnection.UserRole" StoreEntitySet="Users">
+      <EndProperty Name="Role">
+        <ScalarProperty Name="Id" ColumnName="Role_Id" />
+      </EndProperty>
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TripUser" TypeName="DBConnection.TripUser" StoreEntitySet="Trips">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="User_Id" />
+      </EndProperty>
+      <EndProperty Name="Trip">
         <ScalarProperty Name="Id" ColumnName="Id" />
       </EndProperty>
     </AssociationSetMapping>

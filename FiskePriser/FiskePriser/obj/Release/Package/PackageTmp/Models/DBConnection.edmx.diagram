@@ -12,6 +12,14 @@
         <AssociationConnector Association="DBConnection.FiskHavne" />
         <EntityTypeShape EntityType="DBConnection.BenzinPris" Width="1.5" PointX="5" PointY="1.625" />
         <AssociationConnector Association="DBConnection.BenzinPrisHavne" />
+        <EntityTypeShape EntityType="DBConnection.User" Width="1.5" PointX="7.125" PointY="4.375" />
+        <EntityTypeShape EntityType="DBConnection.Password" Width="1.5" PointX="7.125" PointY="2" />
+        <AssociationConnector Association="DBConnection.UserPassword" />
+        <EntityTypeShape EntityType="DBConnection.Role" Width="1.5" PointX="9.5" PointY="4.375" />
+        <AssociationConnector Association="DBConnection.UserRole" />
+        <EntityTypeShape EntityType="DBConnection.Trip" Width="1.5" PointX="5.25" PointY="4.375" />
+        <AssociationConnector Association="DBConnection.TripUser" />
+        <EntityTypeShape EntityType="DBConnection.ActiveSessionId" Width="1.5" PointX="9.5" PointY="2" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

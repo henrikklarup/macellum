@@ -2,8 +2,8 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 10/08/2014 19:50:38
--- Generated from EDMX file: C:\Users\henri_000\Documents\Visual Studio 2013\Projects\FiskePriser\FiskePriser\Models\DBConnection.edmx
+-- Date Created: 12/01/2014 13:57:55
+-- Generated from EDMX file: C:\Users\henri_000\documents\visual studio 2013\Projects\FiskePriser\FiskePriser\Models\DBConnection.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
@@ -24,6 +24,15 @@ GO
 IF OBJECT_ID(N'[dbo].[FK_BenzinPrisHavne]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[BenzinPris] DROP CONSTRAINT [FK_BenzinPrisHavne];
 GO
+IF OBJECT_ID(N'[dbo].[FK_UserPassword]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Users] DROP CONSTRAINT [FK_UserPassword];
+GO
+IF OBJECT_ID(N'[dbo].[FK_UserRole]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Users] DROP CONSTRAINT [FK_UserRole];
+GO
+IF OBJECT_ID(N'[dbo].[FK_TripUser]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Trips] DROP CONSTRAINT [FK_TripUser];
+GO
 
 -- --------------------------------------------------
 -- Dropping existing tables
@@ -40,6 +49,18 @@ IF OBJECT_ID(N'[dbo].[Havns]', 'U') IS NOT NULL
 GO
 IF OBJECT_ID(N'[dbo].[BenzinPris]', 'U') IS NOT NULL
     DROP TABLE [dbo].[BenzinPris];
+GO
+IF OBJECT_ID(N'[dbo].[Users]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Users];
+GO
+IF OBJECT_ID(N'[dbo].[Passwords]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Passwords];
+GO
+IF OBJECT_ID(N'[dbo].[Roles]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Roles];
+GO
+IF OBJECT_ID(N'[dbo].[Trips]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Trips];
 GO
 
 -- --------------------------------------------------
@@ -82,6 +103,47 @@ CREATE TABLE [dbo].[BenzinPris] (
 );
 GO
 
+-- Creating table 'Users'
+CREATE TABLE [dbo].[Users] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Username] nvarchar(max)  NOT NULL,
+    [Password_Id] int  NOT NULL,
+    [Role_Id] int  NOT NULL
+);
+GO
+
+-- Creating table 'Passwords'
+CREATE TABLE [dbo].[Passwords] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [pass] nvarchar(max)  NOT NULL
+);
+GO
+
+-- Creating table 'Roles'
+CREATE TABLE [dbo].[Roles] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Name] nvarchar(max)  NOT NULL
+);
+GO
+
+-- Creating table 'Trips'
+CREATE TABLE [dbo].[Trips] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Open] bit  NOT NULL,
+    [FishList] nvarchar(max)  NOT NULL,
+    [Dato] datetime  NOT NULL,
+    [User_Id] int  NOT NULL
+);
+GO
+
+-- Creating table 'ActiveSessionIds'
+CREATE TABLE [dbo].[ActiveSessionIds] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [SessionId] nvarchar(max)  NOT NULL,
+    [UserId] nvarchar(max)  NOT NULL
+);
+GO
+
 -- --------------------------------------------------
 -- Creating all PRIMARY KEY constraints
 -- --------------------------------------------------
@@ -107,6 +169,36 @@ GO
 -- Creating primary key on [Id] in table 'BenzinPris'
 ALTER TABLE [dbo].[BenzinPris]
 ADD CONSTRAINT [PK_BenzinPris]
+    PRIMARY KEY CLUSTERED ([Id] ASC);
+GO
+
+-- Creating primary key on [Id] in table 'Users'
+ALTER TABLE [dbo].[Users]
+ADD CONSTRAINT [PK_Users]
+    PRIMARY KEY CLUSTERED ([Id] ASC);
+GO
+
+-- Creating primary key on [Id] in table 'Passwords'
+ALTER TABLE [dbo].[Passwords]
+ADD CONSTRAINT [PK_Passwords]
+    PRIMARY KEY CLUSTERED ([Id] ASC);
+GO
+
+-- Creating primary key on [Id] in table 'Roles'
+ALTER TABLE [dbo].[Roles]
+ADD CONSTRAINT [PK_Roles]
+    PRIMARY KEY CLUSTERED ([Id] ASC);
+GO
+
+-- Creating primary key on [Id] in table 'Trips'
+ALTER TABLE [dbo].[Trips]
+ADD CONSTRAINT [PK_Trips]
+    PRIMARY KEY CLUSTERED ([Id] ASC);
+GO
+
+-- Creating primary key on [Id] in table 'ActiveSessionIds'
+ALTER TABLE [dbo].[ActiveSessionIds]
+ADD CONSTRAINT [PK_ActiveSessionIds]
     PRIMARY KEY CLUSTERED ([Id] ASC);
 GO
 
@@ -157,6 +249,51 @@ GO
 CREATE INDEX [IX_FK_BenzinPrisHavne]
 ON [dbo].[BenzinPris]
     ([Havne_Id]);
+GO
+
+-- Creating foreign key on [Password_Id] in table 'Users'
+ALTER TABLE [dbo].[Users]
+ADD CONSTRAINT [FK_UserPassword]
+    FOREIGN KEY ([Password_Id])
+    REFERENCES [dbo].[Passwords]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_UserPassword'
+CREATE INDEX [IX_FK_UserPassword]
+ON [dbo].[Users]
+    ([Password_Id]);
+GO
+
+-- Creating foreign key on [Role_Id] in table 'Users'
+ALTER TABLE [dbo].[Users]
+ADD CONSTRAINT [FK_UserRole]
+    FOREIGN KEY ([Role_Id])
+    REFERENCES [dbo].[Roles]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_UserRole'
+CREATE INDEX [IX_FK_UserRole]
+ON [dbo].[Users]
+    ([Role_Id]);
+GO
+
+-- Creating foreign key on [User_Id] in table 'Trips'
+ALTER TABLE [dbo].[Trips]
+ADD CONSTRAINT [FK_TripUser]
+    FOREIGN KEY ([User_Id])
+    REFERENCES [dbo].[Users]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_TripUser'
+CREATE INDEX [IX_FK_TripUser]
+ON [dbo].[Trips]
+    ([User_Id]);
 GO
 
 -- --------------------------------------------------

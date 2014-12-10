@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 
-namespace FiskePriser.Models
+namespace Macellum.Models
 {
     public class GraphArray
     {
-        public List<GraphInfo> GraphNumbers = new List<GraphInfo>(); 
+        public List<GraphInfo> GraphNumbers = new List<GraphInfo>();
+        public string Date;
     }
 
     public class GraphInfo

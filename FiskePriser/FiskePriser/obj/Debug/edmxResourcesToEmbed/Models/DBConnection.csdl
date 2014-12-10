@@ -17,6 +17,23 @@
       <End Role="BenzinPris" EntitySet="BenzinPris" />
       <End Role="Havne" EntitySet="Havns" />
     </AssociationSet>
+    <EntitySet Name="Users" EntityType="DBConnection.User" />
+    <EntitySet Name="Passwords" EntityType="DBConnection.Password" />
+    <AssociationSet Name="UserPassword" Association="DBConnection.UserPassword">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Password" EntitySet="Passwords" />
+    </AssociationSet>
+    <EntitySet Name="Roles" EntityType="DBConnection.Role" />
+    <AssociationSet Name="UserRole" Association="DBConnection.UserRole">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Role" EntitySet="Roles" />
+    </AssociationSet>
+    <EntitySet Name="Trips" EntityType="DBConnection.Trip" />
+    <AssociationSet Name="TripUser" Association="DBConnection.TripUser">
+      <End Role="Trip" EntitySet="Trips" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <EntitySet Name="ActiveSessionIds" EntityType="DBConnection.ActiveSessionId" />
   </EntityContainer>
   <EntityType Name="Fisk">
     <Key>
@@ -69,4 +86,59 @@
     <End Type="DBConnection.BenzinPris" Role="BenzinPris" Multiplicity="1" />
     <End Type="DBConnection.Havn" Role="Havne" Multiplicity="1" />
   </Association>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" Nullable="false" />
+    <NavigationProperty Name="Password" Relationship="DBConnection.UserPassword" FromRole="User" ToRole="Password" />
+    <NavigationProperty Name="Role" Relationship="DBConnection.UserRole" FromRole="User" ToRole="Role" />
+    <NavigationProperty Name="Trips" Relationship="DBConnection.TripUser" FromRole="User" ToRole="Trip" />
+  </EntityType>
+  <EntityType Name="Password">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pass" Type="String" Nullable="false" />
+  </EntityType>
+  <Association Name="UserPassword">
+    <End Type="DBConnection.User" Role="User" Multiplicity="1" />
+    <End Type="DBConnection.Password" Role="Password" Multiplicity="1" />
+  </Association>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="DBConnection.UserRole" FromRole="Role" ToRole="User" />
+  </EntityType>
+  <Association Name="UserRole">
+    <End Type="DBConnection.User" Role="User" Multiplicity="*" />
+    <End Type="DBConnection.Role" Role="Role" Multiplicity="1" />
+  </Association>
+  <EntityType Name="Trip">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Open" Type="Boolean" Nullable="false" />
+    <Property Name="FishList" Type="String" Nullable="false" />
+    <Property Name="Dato" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="DBConnection.TripUser" FromRole="Trip" ToRole="User" />
+  </EntityType>
+  <Association Name="TripUser">
+    <End Type="DBConnection.Trip" Role="Trip" Multiplicity="*" />
+    <End Type="DBConnection.User" Role="User" Multiplicity="1" />
+  </Association>
+  <EntityType Name="ActiveSessionId">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SessionId" Type="String" Nullable="false" />
+    <Property Name="UserId" Type="String" Nullable="false" />
+  </EntityType>
 </Schema>

@@ -1,19 +1,12 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Forside";
 }
-@using System.Text
-@using System.Web.Razor
-@using System.Web.Script.Serialization
-@using MoreLinq
-@using Newtonsoft.Json
-@model FiskePriser.Models.GraphArray
-
-
-<h2>Index</h2>
+@model Macellum.Models.GraphArray
 
 <div id="myChart2" style="height: 100%; width: 100%; position: relative;"></div>
 
+@* ReSharper disable once UnusedLocals *@
 <script>
 
     // Load the Visualization API and the piechart package.
@@ -24,32 +17,66 @@
 
     function drawChart() {
 
+        @{
+            var colors1 = new List<string>
+            {"#67001f",
+"#b2182b",
+"#d6604d",
+"#f4a582",
+"#fddbc7",
+"#f7f7f7",
+"#d1e5f0",
+"#92c5de",
+"#4393c3",
+"#2166ac",
+"#053061"};
+            var colors2 = new List<string>
+            {"#a50026",
+"#d73027",
+"#f46d43",
+"#fdae61",
+"#fee090",
+"#ffffbf",
+"#e0f3f8",
+"#abd9e9",
+"#74add1",
+"#4575b4",
+"#313695"};
+            var counter = 0;
+        }
+        
         var tst = [
             [
-                "Havn", "Minimum pris", { role: 'tooltip' }, "Maximum pris", { role: 'tooltip' }
+                "Havn", "Minimum pris", { role: 'tooltip' },{type: 'string',role:'style'} , "Maximum pris", { role: 'tooltip' }, {type: 'string',role:'style'}
             ],
             @foreach (var graphNumber in Model.GraphNumbers)
             {
                 var aa = graphNumber.Name.Replace("ø", "\\u00F8");
-                var diff = graphNumber.Value - ( graphNumber.Value2 -  graphNumber.Value);
-                var diff2 = diff/100;
-                var min = graphNumber.Value/100;
-                var minStr = min.ToString("N0").Replace(",", ".").Replace(".", "");
-                var diffTool = diff2 + min;
-                var diffToolStr = diffTool.ToString("N0").Replace(",",".").Replace(".","");
-                @:['@aa',@(min),@(minStr),@(diff2),@(diffToolStr)],
+                
+                var max = graphNumber.Value2;
+                var avg = graphNumber.Value;
+                var minPris = avg - (max - avg);
+                var minPrisStr = minPris.ToString("N0").Replace(",", ".").Replace(".", "");
+                var maxPris = max - minPris;
+                var maxPrisStr = max.ToString("N0").Replace(",", ".").Replace(".", "");
+                
+                @:['@aa',@(minPris),@(minPrisStr),'color: @(colors1[counter])',@(maxPris),@(maxPrisStr), 'color: @(colors2[counter])'],
+
+                counter++;
             }
         ];
 
         var data = google.visualization.arrayToDataTable(tst);
+        var colors2 = ['rgb(229,245,249)', 'rgb(153,216,201)', 'rgb(44,162,95)'];
 
         var options = {
             height: 400,
-            legend: { position: 'top', maxLines: 3 },
+            title: @Html.Raw(Model.Date),
+            legend: { position: 'none', maxLines: 3 },
             bar: { groupWidth: '75%' },
+            backgroundColor: '#fffaf7',
             isStacked: true,
-            colors: ['#0206D6', '#7375FF']
-        };
+    };
 
         var chart = new google.visualization.ColumnChart(document.getElementById('myChart2'));
         chart.draw(data, options);

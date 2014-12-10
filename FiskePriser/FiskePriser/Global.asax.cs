@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace FiskePriser
+namespace Macellum
 {
     public class MvcApplication : System.Web.HttpApplication
     {
@@ -13,6 +10,11 @@ namespace FiskePriser
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+        }
+
+        protected void Session_Start(Object sender, EventArgs e)
+        {
+            Session["init"] = 0;
         }
     }
 }

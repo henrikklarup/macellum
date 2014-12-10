@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FiskePriser.Models
+namespace Macellum.Models
 {
     using System;
     using System.Collections.Generic;
