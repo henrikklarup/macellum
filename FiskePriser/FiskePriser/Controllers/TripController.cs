@@ -117,14 +117,14 @@ namespace Macellum.Controllers
         }
 
         [HttpGet]
-        public ActionResult SletFish(int fishId)
+        public ActionResult SletFish(int fishId, string fishSort )
         {
             var currentTrip = _repo.GetCurrentTrip(SimpleSessionPersister.Username);
             if (currentTrip == null)
                 return RedirectToAction("Index", "Home");
 
             var fishList = JsonConvert.DeserializeObject<List<Fisk>>(currentTrip.FishList);
-            fishList.RemoveAll(s => s.Arters.Id == fishId);
+            fishList.RemoveAll(s => s.Arters.Id == fishId && s.Sort == fishSort);
             currentTrip.FishList = JsonConvert.SerializeObject(fishList);
             _repo.UpdateTrip(currentTrip);
 

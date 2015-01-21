@@ -77,5 +77,12 @@ namespace Macellum.Controllers
 
             return Redirect(Request.QueryString["ReturnUrl"]);
         }
+
+        [HttpGet]
+        public ActionResult LogOut()
+        {
+            SimpleSessionPersister.Username = "";
+            return RedirectToAction("Index","Home");
+        }
     }
 }

@@ -19,7 +19,7 @@
             <td>@item.Arters.Navn</td>
             <td>@item.Sort</td>
             <td>@item.Amount</td>
-            <td>@Html.ActionLink("Slet", "SletFish", "Trip", new { @fishId = item.Arters.Id },null)</td>
+            <td>@Html.ActionLink("Slet", "SletFish", "Trip", new { @fishId = item.Arters.Id, @fishSort = item.Sort }, null)</td>
         </tr>
     }
 </table>

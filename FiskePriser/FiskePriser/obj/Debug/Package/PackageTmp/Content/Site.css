@@ -1,11 +1,11 @@
 ﻿body {
     padding-top: 100px;
     padding-bottom: 20px;
-  background: url(images/bcg.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background: url(images/bcg.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -68,7 +68,7 @@ textarea {
     width   : 80px;
     background  : none;
     cursor  : pointer;
-    font-family : 'voltaeftu-regular',Times New Roman;
+    font-family : 'voltaeftu-regular', Times New Roman;
     font-size   : 16px;
     border  : none;
     margin      : 0px;
