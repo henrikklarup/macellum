@@ -72,6 +72,8 @@ namespace Macellum.Controllers
                     SimpleSessionPersister.Username = user.Username;
                     var sessionId = System.Web.HttpContext.Current.Session.SessionID;
                     _repo.SaveSessionId(user.Username, sessionId);
+                    var iplog = new IpLog {IpAddress = Request.UserHostAddress, UserId = user.Username};
+                    _repo.AddIpLog(iplog);
                 }
             }
 

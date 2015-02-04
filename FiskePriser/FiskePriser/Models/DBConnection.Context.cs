@@ -34,5 +34,7 @@ namespace Macellum.Models
         public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<Trip> Trips { get; set; }
         public virtual DbSet<ActiveSessionId> ActiveSessionIds { get; set; }
+        public virtual DbSet<Nyhede> Nyhedes { get; set; }
+        public virtual DbSet<IpLog> IpLogs { get; set; }
     }
 }

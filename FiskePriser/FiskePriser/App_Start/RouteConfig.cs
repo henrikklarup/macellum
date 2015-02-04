@@ -1,5 +1,6 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
+using Macellum.Scripts;
 
 namespace Macellum
 {
@@ -7,7 +8,11 @@ namespace Macellum
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+            routes.Add(new Subdomain());
+
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+            
 
             routes.MapRoute(
                 name: "Default",

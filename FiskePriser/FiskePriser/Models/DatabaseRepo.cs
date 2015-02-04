@@ -40,7 +40,6 @@ namespace Macellum.Models
         }
         #endregion
 
-
         #region User
         #region GET
         public User GetUserByName(string name)
@@ -199,12 +198,24 @@ namespace Macellum.Models
 
         public IEnumerable<Fisk> GetAllFishNewest()
         {
-            var fisk = _repo.Fisks.OrderByDescending(s => DateTime.ParseExact(s.Dato, "dd-MM-yyyy HH:mm:ss", null).Date);
+            //var firstOrDefault = _repo.Fisks.ToList().OrderByDescending(s => Convert.ToDateTime(s.Dato).Date).FirstOrDefault();
+            var dateQuery = _repo.Fisks.ToList().Select(o => new FishDateTimeClass
+            {
+                DateTime = DateTime.ParseExact(o.Dato, "dd-MM-yyyy HH:mm:ss", null),
+                Fisk = o
+            });
+
+            var fisk = dateQuery.OrderByDescending(s => s.DateTime);
             var firstOrDefault = fisk.FirstOrDefault();
+
             if (firstOrDefault == null) return null;
-            var initialDate = DateTime.ParseExact(firstOrDefault.Dato, "dd-MM-yyyy HH:mm:ss", null).Date;
-            var tst = fisk.DistinctBy(s => s.Arters.Navn);
-            return _repo.Fisks.Where(s => DateTime.ParseExact(s.Dato, "dd-MM-yyyy HH:mm:ss", null).Date.Equals(initialDate));
+            var tst = fisk.DistinctBy(s => new { s.Fisk.Arters.Navn, s.Fisk.Sort });
+            var returnFish = tst.ToList().Select(s => s.Fisk).ToList();
+
+            //var returnFish = DateQuery.Where(s => s._dateTime.Date.Equals(initialDate.Date) && s._Fisk.Havne.Id == havneId).ToList().Select(s => s._Fisk).ToList();
+
+            return returnFish;
+            //return _repo.Fisks.Where(s => DateTime.Parse(s.Dato).Date.Equals(initialDate) && s.Havne.Id == havneId);
         }
 
         public IEnumerable<Fisk> GetAllFishNewest(int havneId)
@@ -334,6 +345,24 @@ namespace Macellum.Models
         public Trip GetTripById(int id)
         {
             return _repo.Trips.FirstOrDefault(s => s.Id == id);
+        }
+        #endregion
+
+        #region Blog
+        public IEnumerable<Nyhede> BlogPosts()
+        {
+            return _repo.Nyhedes;
+        }
+
+        public IEnumerable<Nyhede> BlogPosts(int n)
+        {
+            return _repo.Nyhedes.OrderByDescending(s => s.Date).Take(n);
+        }
+
+        public void AddBlog(Nyhede blog)
+        {
+            _repo.Nyhedes.Add(blog);
+            Save();
         }
         #endregion
 
@@ -596,6 +625,21 @@ namespace Macellum.Models
             return allFish;
         }
         #endregion
+        #endregion
+
+        #region IpLogging
+
+        public IEnumerable<IpLog> GetAllIpLogs()
+        {
+            return _repo.IpLogs.OrderByDescending(s => s.Id);
+        }
+
+        public void AddIpLog(IpLog ipLog)
+        {
+            _repo.IpLogs.Add(ipLog);
+            Save();
+        }
+
         #endregion
 
         #region Save Datebase

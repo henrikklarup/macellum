@@ -81,6 +81,26 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Nyhedes">
+      <EntityTypeMapping TypeName="IsTypeOf(DBConnection.Nyhede)">
+        <MappingFragment StoreEntitySet="Nyhedes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="ImageLink" ColumnName="ImageLink" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IpLogs">
+      <EntityTypeMapping TypeName="IsTypeOf(DBConnection.IpLog)">
+        <MappingFragment StoreEntitySet="IpLogs">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IpAddress" ColumnName="IpAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <AssociationSetMapping Name="FiskArter" TypeName="DBConnection.FiskArter" StoreEntitySet="Fisks">
       <EndProperty Name="Arter">
         <ScalarProperty Name="Id" ColumnName="Arters_Id" />

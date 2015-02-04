@@ -9,6 +9,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <_PublishTargetUrl>D:\lunde</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
+    <File Include="bin/CodeKicker.BBCode.dll">
+      <publishTime>02/03/2015 13:32:38</publishTime>
+    </File>
     <File Include="bin/de/EntityFramework.resources.dll">
       <publishTime>06/10/2014 18:41:46</publishTime>
     </File>
@@ -29,6 +32,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="bin/es/EntityFramework.SqlServer.resources.dll">
       <publishTime>06/10/2014 18:41:46</publishTime>
+    </File>
+    <File Include="bin/ExternalDLLs/CodeKicker.BBCode.dll">
+      <publishTime>02/03/2015 13:32:38</publishTime>
     </File>
     <File Include="bin/FiskePriser.dll">
       <publishTime>12/01/2014 14:42:43</publishTime>
@@ -67,10 +73,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/10/2014 18:41:52</publishTime>
     </File>
     <File Include="bin/Macellum.dll">
-      <publishTime>12/03/2014 18:59:12</publishTime>
+      <publishTime>02/04/2015 20:30:37</publishTime>
     </File>
     <File Include="bin/Macellum.pdb">
-      <publishTime>12/03/2014 18:59:12</publishTime>
+      <publishTime>02/04/2015 20:30:37</publishTime>
     </File>
     <File Include="bin/MoreLinq.dll">
       <publishTime>10/29/2014 14:16:03</publishTime>
@@ -114,6 +120,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/zh-Hant/EntityFramework.SqlServer.resources.dll">
       <publishTime>06/10/2014 18:41:56</publishTime>
     </File>
+    <File Include="Content/blogstyle.css">
+      <publishTime>01/31/2015 13:13:08</publishTime>
+    </File>
     <File Include="Content/bootstrap.css">
       <publishTime>10/06/2014 15:14:00</publishTime>
     </File>
@@ -134,6 +143,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/images/bcg.jpg">
       <publishTime>11/24/2014 16:59:14</publishTime>
+    </File>
+    <File Include="Content/images/bcg.png">
+      <publishTime>12/08/2014 17:04:01</publishTime>
     </File>
     <File Include="Content/images/macellumShaded.png">
       <publishTime>11/29/2014 15:06:50</publishTime>
@@ -202,7 +214,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/01/2014 15:55:38</publishTime>
     </File>
     <File Include="Content/Site.css">
-      <publishTime>11/29/2014 15:19:19</publishTime>
+      <publishTime>12/11/2014 18:41:52</publishTime>
+    </File>
+    <File Include="ExternalDLLs/CodeKicker.BBCode.dll">
+      <publishTime>02/03/2015 13:32:38</publishTime>
     </File>
     <File Include="fonts/custom/glyphicons-regular.eot">
       <publishTime>11/25/2014 17:41:50</publishTime>
@@ -247,10 +262,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/01/2014 15:28:09</publishTime>
     </File>
     <File Include="Models/DBConnection.edmx.diagram">
-      <publishTime>12/01/2014 13:58:38</publishTime>
+      <publishTime>02/03/2015 18:44:50</publishTime>
     </File>
     <File Include="Models/DBConnection.edmx.sql">
-      <publishTime>12/01/2014 13:57:57</publishTime>
+      <publishTime>02/03/2015 18:43:01</publishTime>
     </File>
     <File Include="packages.config">
       <publishTime>10/29/2014 14:16:04</publishTime>
@@ -313,19 +328,28 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/06/2014 15:14:02</publishTime>
     </File>
     <File Include="Views/Admin/Index.cshtml">
-      <publishTime>11/29/2014 15:20:17</publishTime>
+      <publishTime>02/03/2015 15:16:14</publishTime>
+    </File>
+    <File Include="Views/Admin/IpLogs.cshtml">
+      <publishTime>02/03/2015 19:01:05</publishTime>
+    </File>
+    <File Include="Views/Blog/Create.cshtml">
+      <publishTime>01/31/2015 13:30:25</publishTime>
+    </File>
+    <File Include="Views/Blog/Index.cshtml">
+      <publishTime>02/03/2015 13:34:37</publishTime>
     </File>
     <File Include="Views/Home/Help.cshtml">
       <publishTime>11/29/2014 15:07:36</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>12/01/2014 15:54:05</publishTime>
+      <publishTime>12/11/2014 18:22:06</publishTime>
     </File>
     <File Include="Views/Shared/FIshAmoutPartial.cshtml">
-      <publishTime>12/01/2014 15:50:24</publishTime>
+      <publishTime>12/27/2014 13:46:16</publishTime>
     </File>
     <File Include="Views/Shared/FishListPartial.cshtml">
-      <publishTime>12/01/2014 15:50:23</publishTime>
+      <publishTime>12/27/2014 13:56:09</publishTime>
     </File>
     <File Include="Views/Shared/FishListSelect.cshtml">
       <publishTime>12/01/2014 15:40:01</publishTime>
@@ -340,10 +364,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/01/2014 15:50:23</publishTime>
     </File>
     <File Include="Views/Trip/Index.cshtml">
-      <publishTime>12/01/2014 15:50:23</publishTime>
+      <publishTime>12/27/2014 13:50:08</publishTime>
     </File>
     <File Include="Views/Trip/Trip.cshtml">
-      <publishTime>12/01/2014 15:50:23</publishTime>
+      <publishTime>12/27/2014 13:50:01</publishTime>
     </File>
     <File Include="Views/User/Create.cshtml">
       <publishTime>12/01/2014 15:50:23</publishTime>
@@ -364,7 +388,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/06/2014 15:13:55</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>12/03/2014 18:59:13</publishTime>
+      <publishTime>02/04/2015 20:30:38</publishTime>
     </File>
   </ItemGroup>
 </Project>

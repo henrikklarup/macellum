@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LocalDBStoreContainer" CdmEntityContainer="LocalDBContainer">
+    <EntitySetMapping Name="Ships">
+      <EntityTypeMapping TypeName="IsTypeOf(LocalDB.Ship)">
+        <MappingFragment StoreEntitySet="Ships">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShipId" ColumnName="ShipId" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShipPositions">
+      <EntityTypeMapping TypeName="IsTypeOf(LocalDB.ShipPosition)">
+        <MappingFragment StoreEntitySet="ShipPositions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ShipId" ColumnName="ShipId" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

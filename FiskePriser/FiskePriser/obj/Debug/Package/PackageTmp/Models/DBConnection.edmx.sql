@@ -2,8 +2,8 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 12/01/2014 13:57:55
--- Generated from EDMX file: C:\Users\henri_000\documents\visual studio 2013\Projects\FiskePriser\FiskePriser\Models\DBConnection.edmx
+-- Date Created: 02/03/2015 18:42:57
+-- Generated from EDMX file: C:\Users\henri_000\Documents\Visual Studio 2013\Projects\FiskePriser\FiskePriser\Models\DBConnection.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
@@ -61,6 +61,12 @@ IF OBJECT_ID(N'[dbo].[Roles]', 'U') IS NOT NULL
 GO
 IF OBJECT_ID(N'[dbo].[Trips]', 'U') IS NOT NULL
     DROP TABLE [dbo].[Trips];
+GO
+IF OBJECT_ID(N'[dbo].[ActiveSessionIds]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[ActiveSessionIds];
+GO
+IF OBJECT_ID(N'[dbo].[Nyhedes]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Nyhedes];
 GO
 
 -- --------------------------------------------------
@@ -144,6 +150,24 @@ CREATE TABLE [dbo].[ActiveSessionIds] (
 );
 GO
 
+-- Creating table 'Nyhedes'
+CREATE TABLE [dbo].[Nyhedes] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Title] nvarchar(max)  NOT NULL,
+    [Date] nvarchar(max)  NOT NULL,
+    [Body] nvarchar(max)  NOT NULL,
+    [ImageLink] nvarchar(max)  NOT NULL
+);
+GO
+
+-- Creating table 'IpLogs'
+CREATE TABLE [dbo].[IpLogs] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [UserId] nvarchar(max)  NOT NULL,
+    [IpAddress] nvarchar(max)  NOT NULL
+);
+GO
+
 -- --------------------------------------------------
 -- Creating all PRIMARY KEY constraints
 -- --------------------------------------------------
@@ -199,6 +223,18 @@ GO
 -- Creating primary key on [Id] in table 'ActiveSessionIds'
 ALTER TABLE [dbo].[ActiveSessionIds]
 ADD CONSTRAINT [PK_ActiveSessionIds]
+    PRIMARY KEY CLUSTERED ([Id] ASC);
+GO
+
+-- Creating primary key on [Id] in table 'Nyhedes'
+ALTER TABLE [dbo].[Nyhedes]
+ADD CONSTRAINT [PK_Nyhedes]
+    PRIMARY KEY CLUSTERED ([Id] ASC);
+GO
+
+-- Creating primary key on [Id] in table 'IpLogs'
+ALTER TABLE [dbo].[IpLogs]
+ADD CONSTRAINT [PK_IpLogs]
     PRIMARY KEY CLUSTERED ([Id] ASC);
 GO
 

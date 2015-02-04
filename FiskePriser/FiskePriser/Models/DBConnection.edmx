@@ -15,6 +15,8 @@
     <EntitySet Name="Roles" EntityType="DBConnection.Store.Roles" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Trips" EntityType="DBConnection.Store.Trips" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="ActiveSessionIds" EntityType="DBConnection.Store.ActiveSessionIds" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Nyhedes" EntityType="DBConnection.Store.Nyhedes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="IpLogs" EntityType="DBConnection.Store.IpLogs" store:Type="Tables" Schema="dbo" />
     <AssociationSet Name="FiskArter" Association="DBConnection.Store.FiskArter">
       <End Role="Fisk" EntitySet="Fisks" />
       <End Role="Arter" EntitySet="Arters" />
@@ -116,6 +118,24 @@
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="SessionId" Type="nvarchar(max)" Nullable="false" />
     <Property Name="UserId" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Nyhedes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Date" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Body" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ImageLink" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IpLogs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IpAddress" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
   <Association Name="FiskArter">
     <End Role="Fisk" Type="DBConnection.Store.Fisks" Multiplicity="*" />
@@ -227,6 +247,8 @@
             <End Role="User" EntitySet="Users" />
           </AssociationSet>
           <EntitySet Name="ActiveSessionIds" EntityType="DBConnection.ActiveSessionId" />
+          <EntitySet Name="Nyhedes" EntityType="DBConnection.Nyhede" />
+          <EntitySet Name="IpLogs" EntityType="DBConnection.IpLog" />
         </EntityContainer>
         <EntityType Name="Fisk">
           <Key>
@@ -334,6 +356,24 @@
           <Property Name="SessionId" Type="String" Nullable="false" />
           <Property Name="UserId" Type="String" Nullable="false" />
         </EntityType>
+        <EntityType Name="Nyhede">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" />
+          <Property Name="Date" Type="String" Nullable="false" />
+          <Property Name="Body" Type="String" Nullable="false" />
+          <Property Name="ImageLink" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="IpLog">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="String" Nullable="false" />
+          <Property Name="IpAddress" Type="String" Nullable="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -417,6 +457,26 @@
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="SessionId" ColumnName="SessionId" />
           <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Nyhedes">
+      <EntityTypeMapping TypeName="IsTypeOf(DBConnection.Nyhede)">
+        <MappingFragment StoreEntitySet="Nyhedes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="ImageLink" ColumnName="ImageLink" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IpLogs">
+      <EntityTypeMapping TypeName="IsTypeOf(DBConnection.IpLog)">
+        <MappingFragment StoreEntitySet="IpLogs">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IpAddress" ColumnName="IpAddress" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

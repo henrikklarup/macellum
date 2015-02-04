@@ -34,6 +34,8 @@
       <End Role="User" EntitySet="Users" />
     </AssociationSet>
     <EntitySet Name="ActiveSessionIds" EntityType="DBConnection.ActiveSessionId" />
+    <EntitySet Name="Nyhedes" EntityType="DBConnection.Nyhede" />
+    <EntitySet Name="IpLogs" EntityType="DBConnection.IpLog" />
   </EntityContainer>
   <EntityType Name="Fisk">
     <Key>
@@ -140,5 +142,23 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="SessionId" Type="String" Nullable="false" />
     <Property Name="UserId" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Nyhede">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" />
+    <Property Name="Date" Type="String" Nullable="false" />
+    <Property Name="Body" Type="String" Nullable="false" />
+    <Property Name="ImageLink" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IpLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" Nullable="false" />
+    <Property Name="IpAddress" Type="String" Nullable="false" />
   </EntityType>
 </Schema>

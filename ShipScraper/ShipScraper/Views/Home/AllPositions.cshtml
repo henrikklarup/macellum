@@ -1,0 +1,38 @@
+﻿@using ShipScraper.Models
+@model IEnumerable<ShipScraper.Models.ShipPosition>
+
+@{
+    ViewBag.Title = "AllPositions";
+}
+
+<h2>AllPositions</h2>
+@{var repo = new DatabaseRepo();}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ShipId)
+        </th>
+        <th>
+            ShipName
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Position)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShipId)
+        </td>
+        <td>
+            @repo.GetNameFromShipId(item.ShipId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Position)
+        </td>
+    </tr>
+}
+
+</table>

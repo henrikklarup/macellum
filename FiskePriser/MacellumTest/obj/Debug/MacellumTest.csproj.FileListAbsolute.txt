@@ -1,3 +1,4 @@
+C:\Users\henri_000\Documents\Visual Studio 2013\Projects\FiskePriser\MacellumTest\bin\Debug\ExternalDLLs\CodeKicker.BBCode.dll
 C:\Users\henri_000\Documents\Visual Studio 2013\Projects\FiskePriser\MacellumTest\bin\Debug\MacellumTest.dll
 C:\Users\henri_000\Documents\Visual Studio 2013\Projects\FiskePriser\MacellumTest\bin\Debug\MacellumTest.pdb
 C:\Users\henri_000\Documents\Visual Studio 2013\Projects\FiskePriser\MacellumTest\bin\Debug\Macellum.dll
