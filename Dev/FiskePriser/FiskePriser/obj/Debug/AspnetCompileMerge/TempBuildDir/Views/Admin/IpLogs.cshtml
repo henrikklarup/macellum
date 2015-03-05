@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Macellum.Models.IpLog>
+
+@{
+    ViewBag.Title = "IpLogs";
+}
+
+<h2>IpLogs</h2>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IpAddress)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IpAddress)
+        </td>
+    </tr>
+}
+
+</table>

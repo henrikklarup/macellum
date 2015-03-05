@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="henrikkklarup_dk_dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="henrikkklarup_dk_dbEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Fisks" EntityType="henrikkklarup_dk_dbModel.Fisk" />
+  </EntityContainer>
+  <EntityType Name="Fisk">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Art" Type="String" Nullable="false" />
+    <Property Name="Sort" Type="String" Nullable="false" />
+    <Property Name="MaxPrice" Type="String" Nullable="false" />
+    <Property Name="AvgPrice" Type="String" Nullable="false" />
+    <Property Name="Amount" Type="String" Nullable="false" />
+  </EntityType>
+</Schema>

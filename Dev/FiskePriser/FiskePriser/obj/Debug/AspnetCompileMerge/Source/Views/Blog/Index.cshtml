@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+@section Styles {
+    <link href="@Url.Content("~/Content/blogstyle.css")" rel="stylesheet" type="text/css" />
+}
+@using System.Globalization
+@using CodeKicker.BBCode
+@using Macellum.Models
+
+@model List<Macellum.Models.Nyhede>
+@foreach (var blogPost in Model)
+{
+    <article style=" background: #fffaf7;">
+        <header style="margin-left: 10%;">
+            <h1>@blogPost.Title</h1>
+            <p>Published: <time pubdate="pubdate">@blogPost.Date</time></p>
+        </header>
+        <hr align="left" style="margin-top: 1px; margin-left: 10%; width: 20%; color: black; background-color: black; height: 1px;" />
+        @{
+            var k = BBCode.ToHtml(blogPost.Body);
+            var x = Html.Raw(k.Replace("\n", "<br/>"));
+        }
+        <p style="margin-left: 10%; margin-right: 20%;">@x</p>
+        @if (blogPost.ImageLink != "none")
+        {
+            <p style="margin-left: 10%; margin-right: 20%;"><iframe width="560" height="315" src="https://www.youtube.com/embed/@blogPost.ImageLink" frameborder="0" allowfullscreen></iframe></p>
+        }
+        <hr align="left" style="margin-left:10%; width: 20%; color: black; background-color: black; height: 1px;"/>
+        <footer style="text-align: left; margin-left: 10%;">
+            <p><small>macellum.dk</small></p>
+        </footer>
+    </article>
+}

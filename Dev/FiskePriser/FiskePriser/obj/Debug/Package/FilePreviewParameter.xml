@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="macellum" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\henri_000\\Documents\\Visual\ Studio\ 2013\\Projects\\FiskePriser\\FiskePriser\\obj\\Debug\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\henri_000\\Documents\\Visual\ Studio\ 2013\\Projects\\FiskePriser\\FiskePriser\\obj\\Debug\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DBConnectionContainer-Web.config Connection String" description="" value="metadata=res://*/Models.DBConnection.csdl|res://*/Models.DBConnection.ssdl|res://*/Models.DBConnection.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=tcp:n5zbrjbw0f.database.windows.net,1433;Initial Catalog=macelluABGAQL1BO;User Id=macellum@n5zbrjbw0f;Password=@Henrik59828&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\henri_000\\Documents\\Visual\ Studio\ 2013\\Projects\\FiskePriser\\FiskePriser\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DBConnectionContainer']/@connectionString" />
+  </parameter>
+  <parameter name="henrikkklarup_dk_dbEntities-Web.config Connection String" description="henrikkklarup_dk_dbEntities Connection String used in web.config by the application to access the database." value="metadata=res://*/Models.FishPricesDB.csdl|res://*/Models.FishPricesDB.ssdl|res://*/Models.FishPricesDB.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=mssql2.unoeuro.com;persist security info=True;user id=henrikkklar_dk;password=henrik59828;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\henri_000\\Documents\\Visual\ Studio\ 2013\\Projects\\FiskePriser\\FiskePriser\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='henrikkklarup_dk_dbEntities']/@connectionString" />
+  </parameter>
+  <parameter name="henrikkklarup_dk_dbEntities1-Web.config Connection String" description="henrikkklarup_dk_dbEntities1 Connection String used in web.config by the application to access the database." value="metadata=res://*/Models.FishPricesDB.csdl|res://*/Models.FishPricesDB.ssdl|res://*/Models.FishPricesDB.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=mssql2.unoeuro.com;persist security info=True;user id=henrikkklar_dk;password=henrik59828;multipleactiveresultsets=True;application name=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\henri_000\\Documents\\Visual\ Studio\ 2013\\Projects\\FiskePriser\\FiskePriser\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='henrikkklarup_dk_dbEntities1']/@connectionString" />
+  </parameter>
+</parameters>

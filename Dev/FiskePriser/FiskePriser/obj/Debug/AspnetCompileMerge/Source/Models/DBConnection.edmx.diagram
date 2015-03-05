@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="414d051cb3404b92b85631cdfb21ccf3" Name="Diagram1" ZoomLevel="116" >
+        <EntityTypeShape EntityType="DBConnection.Fisk" Width="1.5" PointX="0.75" PointY="6.875" />
+        <EntityTypeShape EntityType="DBConnection.Arter" Width="1.5" PointX="3" PointY="7.25" />
+        <AssociationConnector Association="DBConnection.FiskArter" />
+        <EntityTypeShape EntityType="DBConnection.Havn" Width="1.5" PointX="3" PointY="10.25" />
+        <AssociationConnector Association="DBConnection.FiskHavne" />
+        <EntityTypeShape EntityType="DBConnection.BenzinPris" Width="1.5" PointX="0.75" PointY="10.25" />
+        <AssociationConnector Association="DBConnection.BenzinPrisHavne" />
+        <EntityTypeShape EntityType="DBConnection.User" Width="1.5" PointX="3" PointY="1.875" />
+        <EntityTypeShape EntityType="DBConnection.Password" Width="1.5" PointX="5.25" PointY="1" />
+        <AssociationConnector Association="DBConnection.UserPassword" />
+        <EntityTypeShape EntityType="DBConnection.Role" Width="1.5" PointX="5.25" PointY="3.125" />
+        <AssociationConnector Association="DBConnection.UserRole" />
+        <EntityTypeShape EntityType="DBConnection.Trip" Width="1.5" PointX="0.75" PointY="1.875" />
+        <AssociationConnector Association="DBConnection.TripUser" />
+        <EntityTypeShape EntityType="DBConnection.ActiveSessionId" Width="1.5" PointX="5.75" PointY="5.75" />
+        <EntityTypeShape EntityType="DBConnection.BlogPost" Width="1.5" PointX="0.875" PointY="4.75" />
+        <EntityTypeShape EntityType="DBConnection.Nyhede" Width="1.5" PointX="8.625" PointY="3.625" />
+        <EntityTypeShape EntityType="DBConnection.IpLog" Width="1.5" PointX="8.75" PointY="7" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

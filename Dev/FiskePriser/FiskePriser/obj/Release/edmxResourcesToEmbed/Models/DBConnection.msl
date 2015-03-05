@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBConnectionStoreContainer" CdmEntityContainer="DBConnectionContainer">
+    <EntitySetMapping Name="Fisks">
+      <EntityTypeMapping TypeName="IsTypeOf(DBConnection.Fisk)">
+        <MappingFragment StoreEntitySet="Fisks">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AvgPrice" ColumnName="AvgPrice" />
+          <ScalarProperty Name="MaxPrice" ColumnName="MaxPrice" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Dato" ColumnName="Dato" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Arters">
+      <EntityTypeMapping TypeName="IsTypeOf(DBConnection.Arter)">
+        <MappingFragment StoreEntitySet="Arters">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Navn" ColumnName="Navn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Havns">
+      <EntityTypeMapping TypeName="IsTypeOf(DBConnection.Havn)">
+        <MappingFragment StoreEntitySet="Havns">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Navn" ColumnName="Navn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BenzinPris">
+      <EntityTypeMapping TypeName="IsTypeOf(DBConnection.BenzinPris)">
+        <MappingFragment StoreEntitySet="BenzinPris">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Dato" ColumnName="Dato" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="IsTypeOf(DBConnection.User)">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Passwords">
+      <EntityTypeMapping TypeName="IsTypeOf(DBConnection.Password)">
+        <MappingFragment StoreEntitySet="Passwords">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="IsTypeOf(DBConnection.Role)">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Trips">
+      <EntityTypeMapping TypeName="IsTypeOf(DBConnection.Trip)">
+        <MappingFragment StoreEntitySet="Trips">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Open" ColumnName="Open" />
+          <ScalarProperty Name="FishList" ColumnName="FishList" />
+          <ScalarProperty Name="Dato" ColumnName="Dato" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ActiveSessionIds">
+      <EntityTypeMapping TypeName="IsTypeOf(DBConnection.ActiveSessionId)">
+        <MappingFragment StoreEntitySet="ActiveSessionIds">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FiskArter" TypeName="DBConnection.FiskArter" StoreEntitySet="Fisks">
+      <EndProperty Name="Arter">
+        <ScalarProperty Name="Id" ColumnName="Arters_Id" />
+      </EndProperty>
+      <EndProperty Name="Fisk">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FiskHavne" TypeName="DBConnection.FiskHavne" StoreEntitySet="Fisks">
+      <EndProperty Name="Havne">
+        <ScalarProperty Name="Id" ColumnName="Havne_Id" />
+      </EndProperty>
+      <EndProperty Name="Fisk">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="BenzinPrisHavne" TypeName="DBConnection.BenzinPrisHavne" StoreEntitySet="BenzinPris">
+      <EndProperty Name="Havne">
+        <ScalarProperty Name="Id" ColumnName="Havne_Id" />
+      </EndProperty>
+      <EndProperty Name="BenzinPris">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UserPassword" TypeName="DBConnection.UserPassword" StoreEntitySet="Users">
+      <EndProperty Name="Password">
+        <ScalarProperty Name="Id" ColumnName="Password_Id" />
+      </EndProperty>
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UserRole" TypeName="DBConnection.UserRole" StoreEntitySet="Users">
+      <EndProperty Name="Role">
+        <ScalarProperty Name="Id" ColumnName="Role_Id" />
+      </EndProperty>
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TripUser" TypeName="DBConnection.TripUser" StoreEntitySet="Trips">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="User_Id" />
+      </EndProperty>
+      <EndProperty Name="Trip">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

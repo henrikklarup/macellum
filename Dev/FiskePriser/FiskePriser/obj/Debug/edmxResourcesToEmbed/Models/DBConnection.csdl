@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="DBConnection" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="DBConnectionContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Fisks" EntityType="DBConnection.Fisk" />
+    <EntitySet Name="Arters" EntityType="DBConnection.Arter" />
+    <AssociationSet Name="FiskArter" Association="DBConnection.FiskArter">
+      <End Role="Fisk" EntitySet="Fisks" />
+      <End Role="Arter" EntitySet="Arters" />
+    </AssociationSet>
+    <EntitySet Name="Havns" EntityType="DBConnection.Havn" />
+    <AssociationSet Name="FiskHavne" Association="DBConnection.FiskHavne">
+      <End Role="Fisk" EntitySet="Fisks" />
+      <End Role="Havne" EntitySet="Havns" />
+    </AssociationSet>
+    <EntitySet Name="BenzinPris" EntityType="DBConnection.BenzinPris" />
+    <AssociationSet Name="BenzinPrisHavne" Association="DBConnection.BenzinPrisHavne">
+      <End Role="BenzinPris" EntitySet="BenzinPris" />
+      <End Role="Havne" EntitySet="Havns" />
+    </AssociationSet>
+    <EntitySet Name="Users" EntityType="DBConnection.User" />
+    <EntitySet Name="Passwords" EntityType="DBConnection.Password" />
+    <AssociationSet Name="UserPassword" Association="DBConnection.UserPassword">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Password" EntitySet="Passwords" />
+    </AssociationSet>
+    <EntitySet Name="Roles" EntityType="DBConnection.Role" />
+    <AssociationSet Name="UserRole" Association="DBConnection.UserRole">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Role" EntitySet="Roles" />
+    </AssociationSet>
+    <EntitySet Name="Trips" EntityType="DBConnection.Trip" />
+    <AssociationSet Name="TripUser" Association="DBConnection.TripUser">
+      <End Role="Trip" EntitySet="Trips" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <EntitySet Name="ActiveSessionIds" EntityType="DBConnection.ActiveSessionId" />
+    <EntitySet Name="Nyhedes" EntityType="DBConnection.Nyhede" />
+    <EntitySet Name="IpLogs" EntityType="DBConnection.IpLog" />
+  </EntityContainer>
+  <EntityType Name="Fisk">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AvgPrice" Type="String" Nullable="false" />
+    <Property Name="MaxPrice" Type="String" Nullable="false" />
+    <Property Name="Sort" Type="String" Nullable="false" />
+    <Property Name="Amount" Type="String" Nullable="false" />
+    <NavigationProperty Name="Arters" Relationship="DBConnection.FiskArter" FromRole="Fisk" ToRole="Arter" />
+    <NavigationProperty Name="Havne" Relationship="DBConnection.FiskHavne" FromRole="Fisk" ToRole="Havne" />
+    <Property Name="Dato" Type="String" Nullable="false" />
+    <Property Name="DatoNew" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Arter">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Navn" Type="String" Nullable="false" />
+    <NavigationProperty Name="Fisk" Relationship="DBConnection.FiskArter" FromRole="Arter" ToRole="Fisk" />
+  </EntityType>
+  <Association Name="FiskArter">
+    <End Type="DBConnection.Fisk" Role="Fisk" Multiplicity="*" />
+    <End Type="DBConnection.Arter" Role="Arter" Multiplicity="1" />
+  </Association>
+  <EntityType Name="Havn">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Navn" Type="String" Nullable="false" />
+    <NavigationProperty Name="Fisk" Relationship="DBConnection.FiskHavne" FromRole="Havne" ToRole="Fisk" />
+    <NavigationProperty Name="BenzinPri" Relationship="DBConnection.BenzinPrisHavne" FromRole="Havne" ToRole="BenzinPris" />
+  </EntityType>
+  <Association Name="FiskHavne">
+    <End Type="DBConnection.Fisk" Role="Fisk" Multiplicity="*" />
+    <End Type="DBConnection.Havn" Role="Havne" Multiplicity="1" />
+  </Association>
+  <EntityType Name="BenzinPris">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Price" Type="String" Nullable="false" />
+    <NavigationProperty Name="Havne" Relationship="DBConnection.BenzinPrisHavne" FromRole="BenzinPris" ToRole="Havne" />
+    <Property Name="Dato" Type="String" Nullable="false" />
+  </EntityType>
+  <Association Name="BenzinPrisHavne">
+    <End Type="DBConnection.BenzinPris" Role="BenzinPris" Multiplicity="1" />
+    <End Type="DBConnection.Havn" Role="Havne" Multiplicity="1" />
+  </Association>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" Nullable="false" />
+    <NavigationProperty Name="Password" Relationship="DBConnection.UserPassword" FromRole="User" ToRole="Password" />
+    <NavigationProperty Name="Role" Relationship="DBConnection.UserRole" FromRole="User" ToRole="Role" />
+    <NavigationProperty Name="Trips" Relationship="DBConnection.TripUser" FromRole="User" ToRole="Trip" />
+  </EntityType>
+  <EntityType Name="Password">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pass" Type="String" Nullable="false" />
+  </EntityType>
+  <Association Name="UserPassword">
+    <End Type="DBConnection.User" Role="User" Multiplicity="1" />
+    <End Type="DBConnection.Password" Role="Password" Multiplicity="1" />
+  </Association>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="DBConnection.UserRole" FromRole="Role" ToRole="User" />
+  </EntityType>
+  <Association Name="UserRole">
+    <End Type="DBConnection.User" Role="User" Multiplicity="*" />
+    <End Type="DBConnection.Role" Role="Role" Multiplicity="1" />
+  </Association>
+  <EntityType Name="Trip">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Open" Type="Boolean" Nullable="false" />
+    <Property Name="FishList" Type="String" Nullable="false" />
+    <Property Name="Dato" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="DBConnection.TripUser" FromRole="Trip" ToRole="User" />
+  </EntityType>
+  <Association Name="TripUser">
+    <End Type="DBConnection.Trip" Role="Trip" Multiplicity="*" />
+    <End Type="DBConnection.User" Role="User" Multiplicity="1" />
+  </Association>
+  <EntityType Name="ActiveSessionId">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SessionId" Type="String" Nullable="false" />
+    <Property Name="UserId" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Nyhede">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" />
+    <Property Name="Date" Type="String" Nullable="false" />
+    <Property Name="Body" Type="String" Nullable="false" />
+    <Property Name="ImageLink" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IpLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" Nullable="false" />
+    <Property Name="IpAddress" Type="String" Nullable="false" />
+  </EntityType>
+</Schema>
