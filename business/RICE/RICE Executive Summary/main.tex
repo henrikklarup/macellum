@@ -1,0 +1,224 @@
+\documentclass[12pt]{article}
+
+\RequirePackage{fullpage} % Small margins.
+\setlength{\parindent}{0pt} % Default is 15pt.
+
+%%% Input encoding and various packages:
+\RequirePackage[utf8]{inputenc} % The use of æ, ø and å.
+\RequirePackage[T1]{fontenc} % Hyphenation of words containing æ. ø and å.
+\RequirePackage{acronym} % Acronym handling.
+\RequirePackage{amsmath,amsfonts,amssymb} % Math package.
+\RequirePackage{listings}
+\RequirePackage{cancel} % Ain't quite sure what this one does..
+\RequirePackage{mdwlist} % Allows the use of \tightlist
+
+%%% Tables in \infty shades of grey.
+\RequirePackage[table]{xcolor}
+\definecolor{lightblue}{rgb}{0.88,0.91,1.0}
+\RequirePackage{array,booktabs} % Tables.
+
+%%% Enabling the "draft" on the pages to show that it is only a draft.
+%\RequirePackage{draftwatermark}
+%\SetWatermarkScale{5}
+%\SetWatermarkColor{lightblue}
+%\SetWatermarkText{DRAFT}
+
+
+\RequirePackage[colorinlistoftodos]{todonotes}
+
+%%% Redefine vectors to be bold.
+\let\oldhat\hat
+\renewcommand{\vec}[1]{\boldsymbol{#1}}
+\renewcommand{\hat}[1]{\oldhat{\mathbf{#1}}}
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE Business Plan}\\[1.5cm] % Name of your university/college
+\textsc{\Large Venture Cup}\\[0.5cm] % Major heading such as course name
+\textsc{\large Startup Competetion 2015}\\[0.5cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \bfseries macellum.dk}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+Rasmus L. \textsc{Christensen} % Your name
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+Henrik \textsc{Klarup} % Supervisor's Name
+\end{flushright}
+\end{minipage}\\[2cm]
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[2cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+\includegraphics[width=\textwidth]{logo}\\[1cm] % Include a department/university logo - this will require the graphicx package
+ 
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+
+\section{Company Summary:}
+In modern day demersal fishing, there are two main factors, the price fishermen obtain for their fish and the costs of running the operation. As the operational costs have gone up and with governmental restrictions on the amount of fish the fishermen are allowed to catch, the only possible way of increasing the selling price for the fish, is to analyse the various auction houses where the fish are sold, and then go to the one where you can obtain the most profitable price. macellum.dk analyses the market history and then shows the various markets in an easily readable manner to the end-user. The product consists of a web-portal that the user logs on to, enters amount and species of his current catch and then instantly sees where the market price is highest. Thus aiding the fishermen in obtaining the highest possible price. 
+
+This product can easily be extended to other markets, such as the thriving fruit market in southern Europe which works in much the same manner as the fish markets - as well as a potential expansion to a B2C application for grocery shopping.
+
+\section{Customer Market Analysis:}
+Over the past 30 years, the European demersal fishing fleet have been cut down to approximately one third of what it was back in its glory days, mainly due to the implementation of quotas on specific fish species and outdated models of the fish stock. The number of fishing vessels is according to the European Union estimated at 86,000 fishing vessels which could benefit from this (excluding the Norwegian, Swedish and Icelandic fleets which are amongst the largest in continental Europe). As this product is first-of-its-kind, the potential market share is hard to estimate, but a complete market share would generate 17.3 million EUR/month (approx 19.5 million USD) in revenue, with little to no expenses to cover. The total addressable market is around 4 million vessels worldwide, 
+
+The European market includes 330 fishing ports, each with a fish auction connected to it. However, due to recent cutbacks in fish quotas, some of the auction houses are being joint to save money, and cut back on costs. 
+
+The average fisherman (and ship owner) is often dyslexic with little to no schooling - and have only recently discovered the internet (we all know them, just like your grand parents), which enforces stricter requirements to the end product. 
+
+
+330 fishing ports in Europe
+
+Comprises almost 1 percent of the European Unions budget.
+
+The fishermen have internet access via a satellite connection.
+
+The average fishermen is often dyslexic and only with primary schooling - which thus puts up requirements to the system being simple and easy to use. 
+
+Product Description:
+As mentioned, the product is currently under development as an alpha-version, and is being tested by various fishing vessels in Denmark before a big scale testing phase will begin. The alpha-version needs a complete refactoring as well as the development of a back-end before an actual release can be scheduled. However, this is underway. 
+
+Several steps have been identified as to maintain the position as the number one product to be used by the fishermen, and to remove competitors from the scene. 
+
+Account for fuel costs to the various harbours.
+Cooperate with ship-weigh-in system producers.
+Front the development of the statistical analysis software.
+Cooperation with the national Danish fishing authority as well as the government in including their E-log as a part of our system.
+
+The business model of the project, is a mix between a loyalty and subscription based model. This model will ensure that the project will continuously generate revenue for further development and expansion to other markets such as fruit or livestock.
+
+Future development of the project will include a system for the auction houses, where the aim of this system will be to facilitate live fish auctions online. The system will enable fishermen and buyers to instantly see the worth of their catch in different countries.
+
+To understand the functionality of the site, a login have been created to allow readers of this summary to understand the functionality. The username is: “rpbc” and the password is “rpbc2015”. The login will be closed after the competition, and is intended to provide an insight into the product’s functionalities.
+
+Intellectual Property Right:
+It is currently not possible to patent simple web-based solutions, however, the statistical model is currently under investigation about patenting rights in collaboration with Aalborg University. 
+
+The name and brand macellum.dk can be protected by trademark rights. The name macellum originally comes from ancient Greek, meaning a slaughterhouse or market square.
+Before releasing the product it will be important to obtain a trademark protection on the brand and logo within the European market, where the expansion will happen shortly after releasing the product.
+Getting the trademark rights is important as the market we aim is slow to adapt to new changes, which will also include the name systems used.
+
+\section{Competitive Differentiation:}
+The auction houses have just recently started putting their prices online, and thus follows the general tendency in the fishing industry about being very conservative about using new technologies. This is a clear advantage for macellum.dk, as it will be a first mover in this field, as well as making several other business opportunities along this tangent. 
+
+The advantage of being first movers also motivates to continuously stay ahead of any competition, by including other factors related to the fishing industry (docking costs, ice costs, refueling charges etc.). Most of these factors have been thought into the refactoring of the web page before the actual release. 
+
+Service: We know the customers and what they want. 
+Foot inside the business (at least for fishermen)
+
+\section{Management Team:}
+The team is currently led by M.Sc. Electrical Engineering Rasmus Lundgaard Christensen, an Industrial PhD Student currently enrolled in a joint venture by Aalborg University and Lodam electronics A/S. The technical side of the project is led by Henrik Juul Holm Klarup finishing his masters degree in Computer Science and Innovation this summer.
+
+As none of us have a lot of experience with business modelling and how to run a business we have teamed up with an advisory board consisting of:
+\begin{itemize}
+	\item Steffen Skovfoged, CEO and Owner of UNIwise A/S. 
+	\item Morten Dahlgaard, Head of Center for Entrepreneurship, Aalborg University.
+	\item Christoffer Baadsgaard, CTO of Debito.dk and Entrepreneurial Expert at Aalborg University. 
+	\item Anders Bredgaard, Attorney (L) LL.M., Henrik Christensen \& Partners.
+	\item Henrik Christensen, Tax Consultant Spar Nord Bank.
+	\item Simone Frattasi, Patent and IPR Consultant, patrade A/S.
+	\item Frits Lundgaard Christensen, Owner/Skipper, RI 344 Mikkel-Louise \& L 126 Bering Sea.
+	\item Dansk Fiskeriforening.
+	\item Konsumfisk.dk.
+\end{itemize}
+
+\section{Financial:}
+The revenue of the product will be generated by the users subscribing to the service. The service will be priced at 200 euros/month (approx. 226 USD). This amount might seem a lot, but when compared to potential earnings of more than 50.000 euros, the investment return for the end-user is really high, which justifies the price. This subscription will provide access to the site and all the functionality included on here. 
+
+To encourage users to purchase a subscription and keep using macellum.dk, a loyalty based model is implemented, with an annual deduction of 120 euros (10 euros/month) from the original price. The minimum price is 100 euros/month, so the revenue will continuously generate revenue even though people remain loyal. 
+
+For the product to be self-sustaining macellum.dk would need 28 subscribers. To put this in perspective, this is only 1\% of the danish market alone.
+
+\section{Amount of Investment:}
+The investment amount sought have been divided into several steps based on the amount invested. The features are described below, and all include bringing the product to market, and a two year investment plan.
+
+Amount invested
+Features
+$350.000$
+Product to market - Northern Sea. 
+
+$500.000$
+The above mentioned feature
+Additional statistician
+
+$750.000$
+The above mentioned features
+Additional software developer
+Expansion to Europe.
+
+$1.000.000$
+The above mentioned features
+Expansion to America
+Expansion to Asia
+
+The amount sought by investors have been divided into three parts, each representing a 
+Product-to-market, 2 year investment, 2 year return,
+350.000 dollars.
+
+Product-to-market, including hired statistician.
+500.000 dollars
+
+Product-to-market, including statistician and rapid expansion into the Mediterranean.
+750.000 dollars
+
+All the above, plus an expansion to the Americas and Asia. 
+1.000.000 dollars.
+
+Talks with Steen Palle from Borean Innovation
+Sealand Capital A/S
+Dem fra Lyngby?
+
+
+Guidelines: Executive summaries must be 2 to 5 pages of text and should include information on: 
+Company summary  
+Customer/market analysis: market size, potential market share and the problem or need your company solves  
+Product or service description including current state of development  
+Intellectual property: status of patents and licenses (if applicable)  
+Competitive differentiation  
+Management team and/or advisors, including relevant experience  
+Financial: 3-5 year projection of revenue, profit and cash flow  
+Amount of investment you are seeking and use of funds
+
+
+\end{document}

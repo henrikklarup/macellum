@@ -1,0 +1,76 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Lined Cover Letter
+% LaTeX Template
+% Version 1.0 (1/6/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Matthew J. Miller
+% http://www.matthewjmiller.net/howtos/customized-cover-letter-scripts/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
+
+\usepackage{charter} % Use the Charter font for the document text
+
+\newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1.75in}{\vspace{0.5in}
+\includegraphics[width=1.2\linewidth]{logo.png}}} % Company/institution logo at the top left of the page
+\makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
+
+\newlfmP{sigsize=50pt} % Slightly decrease the height of the signature field
+\newlfmP{addrfromemail} % Print an email address under the sender's address
+\PhrEmail{Email} % Customize the "E-mail" text
+
+\lthUiuc % Print the company/institution logo
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\namefrom{} % Name
+
+\addrfrom{
+\today\\[12pt] % Date
+Project Proposal - PDP8\\
+Aalborg University\\
+\\
+Rasmus L. Christensen \& Henrik Klarup
+}
+
+\emailfrom{\{\texttt{rasmus,henrik}\}@macellum.dk} % Phone number
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\begin{newlfm}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+\section{Introduction:} The fishing industry in Europe have through the past 20 years been under a lot of pressure, mainly due to the European Union, competetion from cheap asian/eastern european labour as well as increasing fuel prices. macellum.dk is a small Aalborg-based start-up who have developed a web-application to aid the fishermen in getting a higher price for their fish at various harbours. However, the team consists of two engineers with little to no experience in usability and user-experiene, hence this project proposal.\\
+
+\section{Description:} The product developed by macellum.dk consists of a web-based platform on where the fishermen can log in and enter their catch, the catch is then converted to a specified local currency and unit (ex. DKK/kilo), and the total worth of the catch is visualized using bar-graphs. This project, aims to obtain an overview of other possible methods to be used for data-input as well as other ways of visualizing the worth of the cargo.
+
+The product will through the next six months be tested by fishermen in Denmark, and these will also serve as a reference for the project. Contact information will be provided for the project group, once the test-setup have been defined. Do note, that fishermen are usually dyslexic and are also not the most technically brilliant people, so actual interviews might have to be carried out, to ensure that the data used in the project is of actual value to the project group. Should this seem too confusing, we'd be more than happy to conduct the interviews for the project group (as we also speak "fisherman").\\
+ 
+\section{Expected Outcome:} The expected outcome of the project, is an analysis of possible ways of entering the fish, as well as an analysis of the data representation, with possible suggestions as to how this can be done in other ways. We will of course provide all the assistance we are able to, as to specify an actual project formulation with the project group, and when it is deemed necessary of course participate in project-meetings.\\
+
+\section{Other:} macellum.dk have recently won Venture Cup and are currently participating in two other start-up competetions. We are currently looking in to funding the company, and any results/outcome of this project, will be used directly in these presentations.\\
+
+
+%----------------------------------------------------------------------------------------
+
+\end{newlfm}
+\end{document}

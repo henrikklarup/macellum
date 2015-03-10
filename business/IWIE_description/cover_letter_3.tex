@@ -1,0 +1,79 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Lined Cover Letter
+% LaTeX Template
+% Version 1.0 (1/6/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Matthew J. Miller
+% http://www.matthewjmiller.net/howtos/customized-cover-letter-scripts/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
+
+\usepackage{charter} % Use the Charter font for the document text
+
+\newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1.75in}{\vspace{0.5in}
+\includegraphics[width=1.2\linewidth]{logo.png}}} % Company/institution logo at the top left of the page
+\makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
+
+\newlfmP{sigsize=50pt} % Slightly decrease the height of the signature field
+\newlfmP{addrfromemail} % Print an email address under the sender's address
+\PhrEmail{Email} % Customize the "E-mail" text
+
+\lthUiuc % Print the company/institution logo
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\namefrom{macellum.dk} % Name
+
+\addrfrom{
+\today\\[12pt] % Date
+Rasmus L. Christensen \& Henrik Klarup\\
+Aalborg University
+}
+
+\emailfrom{\{\texttt{rasmus,henrik}\}@macellum.dk} % Phone number
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\begin{newlfm}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+\section{Introduction:} macellum.dk provides transparancy to the fish-auction in Europe, and is targeted at the industrial fishermen with connection to the North sea. Later expansions of the product includes markets such as the Meditteranian, Oceania, Africa, Australasia, Asia and the Americas. The product is simple and only requires an internet connection, which most of todays modern fishing vessels are equipped with.\\
+
+\section{Customer Pain:} Todays modern fishing business have been under a lot of pressure over the past 20 years. No other business is as regulated as this one which can clearly be seen on the number of vessels in the fishing fleet. From 1998 to today, the danish fishing fleet (alone) have gone from more than 6000 vessels to a mere 2600\footnote{source: Dansk Fiskeriforening (the National Danish Fisheries Organisation)}. The effect of this can be seen clearly in the once thriving coastal towns around Europe, which today almost lay bare and deserted, as a reminder of what once was. The current way that information is sent to the vessel, is by the individual auction houses having their seperate systems, usually consisting of a table describing the price of the individual specie and sorts of fish. This is both confusing and time consuming, especially for non-technical fishermen.
+
+macellum.dk provides a fast and clear overview of the worth of the cargo in all harbours connected to the North Sea, and thus provides the fishermen with information on where to offload and sell his fish. Such a system does not currently exist - and little attention have been given to the fishing industry as a whole.\\
+ 
+\section{Business Plan:} The business plan is simple. A loyalty based subscription model will be used. The price of the service will be set at around 200 euros per month per vessel. With the price dropping 10 euros per year, until a fixed rate of 100 euros/month is reached. The reason for this model is two-fold: 1) the price might seem high, but when compared with potential earnings of more than half a million a month for the vessels, the investment return for the fishermen is high. 2) the price is so low, that competitors products, will have to have additional features at an even lower price, before fishermen will consider switching.
+
+The market potential in Denmark alone, is 2600 vessels - at 10\%, the monthly revenue is 52000 euros, with hardly any expenses to cover, other than development costs and server rentals.\\
+
+\section{Future Development:}
+Further development of the system includes comparison of the cost-to-harbour from the vessels position, integration with the on-board weighing systems as well as a system for the auction houses, to be able to track the price of the fish live, and give the best possible information to the fishermen. At later stages, a statistical model will be developed, aimed at estimating tomorrows fish prices.\\
+\\
+\\
+
+
+%----------------------------------------------------------------------------------------
+
+\end{newlfm}
+\end{document}

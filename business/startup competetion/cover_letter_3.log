@@ -1,0 +1,1051 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.4)  2 FEB 2015 18:15
+entering extended mode
+**C:/Users/rlc/Documents/macellum.dk/repo/business/startup*competetion/cover_le
+tter_3.tex
+
+("C:/Users/rlc/Documents/macellum.dk/repo/business/startup competetion/cover_le
+tter_3.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\newlfm\newlfm.cls"
+Document Class: newlfm 2009/04/10 v9.4 Letter-Fax-Memo LaTeX Document Class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\newlfm\setdim.sty"
+Package: setdim 2009/04/10 v9.4 Address macros
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+\fancy@headwidth=\skip41
+\f@ncyO@elh=\skip42
+\f@ncyO@erh=\skip43
+\f@ncyO@olh=\skip44
+\f@ncyO@orh=\skip45
+\f@ncyO@elf=\skip46
+\f@ncyO@erf=\skip47
+\f@ncyO@olf=\skip48
+\f@ncyO@orf=\skip49
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count79
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lastpage\lastpage.sty"
+Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count80
+\calc@Bcount=\count81
+\calc@Adimen=\dimen102
+\calc@Bdimen=\dimen103
+\calc@Askip=\skip50
+\calc@Bskip=\skip51
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count82
+\calc@Cskip=\skip52
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\rotating\rotating.sty"
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+\c@r@tfl@t=\count83
+\rotFPtop=\skip53
+\rotFPbot=\skip54
+\rot@float@box=\box26
+\rot@mess@toks=\toks15
+)
+\@addr@fr@sk@b=\skip55
+\@addr@fr@sk@a=\skip56
+\@addr@to@sk@b=\skip57
+\@addr@to@sk@a=\skip58
+\@blka@b=\skip59
+\@blka@a=\skip60
+\@blkb@b=\skip61
+\@blkb@a=\skip62
+\@blkc@b=\skip63
+\@blkc@a=\skip64
+\@caption@skip@above=\skip65
+\@caption@skip@below=\skip66
+\@cello@h=\skip67
+\@cello@w=\skip68
+\@cello@d=\skip69
+\@cello@l=\skip70
+\@dt@sk@b=\skip71
+\@dt@sk@a=\skip72
+\@Dth@H@L=\skip73
+\@Dth@H@C=\skip74
+\@Dth@H@R=\skip75
+\@Dth@F@L=\skip76
+\@Dth@F@C=\skip77
+\@Dth@F@R=\skip78
+\@Dth@h@l=\skip79
+\@Dth@h@c=\skip80
+\@Dth@h@r=\skip81
+\@Dth@f@l=\skip82
+\@Dth@f@c=\skip83
+\@Dth@f@r=\skip84
+\@greet@to@sk@b=\skip85
+\@greet@to@sk@a=\skip86
+\@Hgt@Head=\skip87
+\@Hrw=\skip88
+\@hrw=\skip89
+\@extr@hor=\skip90
+\@Frw=\skip91
+\@frw=\skip92
+\@Hgt@Foot=\skip93
+\@Hgt@head=\skip94
+\@Hgt@foot=\skip95
+\@Hgt@H@L=\skip96
+\@Hgt@H@C=\skip97
+\@Hgt@H@R=\skip98
+\@Hgt@F@L=\skip99
+\@Hgt@F@C=\skip100
+\@Hgt@F@R=\skip101
+\@Hgt@h@l=\skip102
+\@Hgt@h@c=\skip103
+\@Hgt@h@r=\skip104
+\@Hgt@f@l=\skip105
+\@Hgt@f@c=\skip106
+\@Hgt@f@r=\skip107
+\@lab@bl=\skip108
+\@lab@pl=\skip109
+\@lab@pw=\skip110
+\@lab@bh=\skip111
+\@lab@bw=\skip112
+\@lab@th=\skip113
+\@lab@lm=\skip114
+\@marg@lt=\skip115
+\@marg@rt=\skip116
+\@marg@tp=\skip117
+\@marg@bt=\skip118
+\@marg@tp@a=\skip119
+\@marg@bt@a=\skip120
+\@marg@bt@b=\skip121
+\@marg@tp@b=\skip122
+\@marg@tp@s=\skip123
+\@marg@lt@r=\skip124
+\@marg@lt@l=\skip125
+\@marg@rt@r=\skip126
+\@marg@rt@l=\skip127
+\@marg@lt@tp@d=\skip128
+\@marg@rt@tp@d=\skip129
+\@Min@Hgt@Head=\skip130
+\@Min@Hgt@head=\skip131
+\@Min@Hgt@Foot=\skip132
+\@Min@Hgt@foot=\skip133
+\@Min@Hgt@Right=\skip134
+\@Min@Hgt@right=\skip135
+\@Min@Hgt@Left=\skip136
+\@Min@Hgt@left=\skip137
+\@Plg=\skip138
+\@Pwd=\skip139
+\@plg=\skip140
+\@pwd=\skip141
+\@post@sig@sp@a=\skip142
+\@post@sig@sp@b=\skip143
+\@pre@memo@sp=\skip144
+\@post@memo@sp=\skip145
+\@sig@sp=\skip146
+\@text@width=\skip147
+\@sig@sk@a=\skip148
+\@sig@sk@b=\skip149
+\@sig@sk@c=\skip150
+\@sig@sk@r=\skip151
+\@cls@sk@a=\skip152
+\@cls@sk@b=\skip153
+\@text@height=\skip154
+\@unpr@tp=\skip155
+\@unpr@bm=\skip156
+\@unpr@rt=\skip157
+\@unpr@lt=\skip158
+\@util=\skip159
+\@utila=\skip160
+\@utilb=\skip161
+\@utilc=\skip162
+\@utild=\skip163
+\@utile=\skip164
+\@utilf=\skip165
+\@utilg=\skip166
+\@utilh=\skip167
+\@utili=\skip168
+\@utilj=\skip169
+\@utilk=\skip170
+\@utill=\skip171
+\@xda=\skip172
+\@xdb=\skip173
+\@xdc=\skip174
+\@xdd=\skip175
+\@xde=\skip176
+\@xdf=\skip177
+\@xdg=\skip178
+\@xdh=\skip179
+\@xdi=\skip180
+\@sig@box@a=\box27
+\b@addr@fr=\box28
+\b@addr@to=\box29
+\@x@c=\box30
+\@x@l=\box31
+\@x@r=\box32
+\fba=\box33
+\adrfr=\box34
+\adrto=\box35
+\@sig@box@b=\box36
+\@sig@box@c=\box37
+\@sig@box@d=\box38
+\@sig@box@e=\box39
+\@sig@box@f=\box40
+\@sig@box@g=\box41
+\@sig@box@h=\box42
+\@sig@box@i=\box43
+\@sig@box@j=\box44
+\@rest@ltr=\box45
+\@resta@ltr=\box46
+\@restb@ltr=\box47
+\@restc@ltr=\box48
+\@restd@ltr=\box49
+\@reste@ltr=\box50
+\c@@c@pos=\count84
+\c@figure=\count85
+\c@table=\count86
+\c@@sig@tot=\count87
+\c@@lab@tot@row=\count88
+\c@@lab@tot@col=\count89
+\c@@lab@cnt@row=\count90
+\c@@lab@cnt@col=\count91
+\@nlfm@addr=\count92
+\@nlfm@util=\count93
+\@nlfm@uta=\count94
+\@nlfm@utb=\count95
+
+All language information must be in newlfm.cls
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\letter.cls"
+Document Class: letter 1999/04/29 v1.2z Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fleqn.clo"
+File: fleqn.clo 1998/08/17 v1.1c Standard LaTeX option (flush left equations)
+\mathindent=\dimen106
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\longindentation=\dimen107
+\indentedwidth=\dimen108
+\labelcount=\count96
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\newlfm\addrset.sty"
+Package: addrset 2009/04/10 v9.4 Address macros
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\afterpage.sty"
+Package: afterpage 1995/10/27 v1.08 After-Page Package (DPC)
+\AP@output=\toks16
+\AP@partial=\box51
+\AP@footins=\box52
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\envlab\envlab.sty"
+Package: envlab 1997/07/16 v1.2 Envelopes and Labels
+Package envlab Info: Envelopes & Labels package: found makelabels...
+(envlab)             Seems everything is OK. Good luck. on input line 58.
+\@envelopeposition=\count97
+\PSEnvelopeTray=\toks17
+\EnvelopeWidth=\skip181
+\EnvelopeHeight=\skip182
+\EnvelopeTopMargin=\skip183
+\EnvelopeLeftMargin=\skip184
+\LabelWidth=\skip185
+\LabelHeight=\skip186
+\LabelTopMargin=\skip187
+\LabelLeftMargin=\skip188
+\LabelRightMargin=\skip189
+\c@LabelMaxCol=\count98
+\c@LabelMaxRow=\count99
+\FromAddressTopMargin=\skip190
+\FromAddressLeftMargin=\skip191
+\FromAddressHeight=\skip192
+\FromAddressWidth=\skip193
+\ToAddressTopMargin=\skip194
+\ToAddressLeftMargin=\skip195
+\ToAddressWidth=\skip196
+
+Loading configuration file envlab.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\envlab\envlab.cfg"
+File: envlab.cfg 1997/07/16 v1.2 Envelopes and Labels
+)
+\c@LabelCountCol=\count100
+\c@LabelCountRow=\count101
+\c@LabelOffsetCol=\count102
+\c@LabelOffsetRow=\count103
+\@numreturnlabels=\count104
+\@zipcode=\toks18
+\@zipcodesum=\count105
+\@barcodewidth=\skip197
+\@barcodeLheight=\skip198
+\@barcodeSheight=\skip199
+\@barcodeskip=\skip200
+\@addr@cap=\toks19
+)
+The default definition for memosec is used. File memosec.tex doesn't exist.
+Press release definitions stored in newlfm.cls
+faxpage definitions stored in newlfm.cls
+letrinfo.tex\ not found. All letter definitions must be in newlfm.cls
+LaTeX Info: Redefining \@texttop on input line 1884.
+\@rep@th=\dimen109
+\@rep@tw=\dimen110
+\@rep@om=\dimen111
+\@rep@em=\dimen112
+\@rep@cs=\dimen113
+\@rep@tm=\dimen114
+\@rep@hh=\dimen115
+\@rep@hs=\dimen116
+\@rep@fs=\dimen117
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\preprint\fullpage.sty"
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip201
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks20
+\inpenc@posthook=\toks21
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\acronym\acronym.sty"
+Package: acronym 2014/09/29 v1.40 Support for acronyms (Tobias Oetiker)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\bigfoot\suffix.sty"
+Package: suffix 2006/07/15 1.5 Variant command support
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xstring\xstring.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xstring\xstring.tex"
+\@xs@message=\write3
+\integerpart=\count106
+\decimalpart=\count107
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+\AC@clearlist=\toks22
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip202
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks23
+\ex@=\dimen118
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen119
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count108
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count109
+\leftroot@=\count110
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count111
+\DOTSCASE@=\count112
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+\big@size=\dimen120
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count113
+\c@MaxMatrixCols=\count114
+\dotsspace@=\muskip10
+\c@parentequation=\count115
+\dspbrk@lvl=\count116
+\tag@help=\toks24
+\row@=\count117
+\column@=\count118
+\maxfields@=\count119
+\andhelp@=\toks25
+\eqnshift@=\dimen121
+\alignsep@=\dimen122
+\tagshift@=\dimen123
+\tagwidth@=\dimen124
+\totwidth@=\dimen125
+\lineht@=\dimen126
+\@envbody=\toks26
+\multlinegap=\skip203
+\multlinetaggap=\skip204
+\mathdisplay@stack=\toks27
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count120
+\lst@gtempboxa=\box55
+\lst@token=\toks28
+\lst@length=\count121
+\lst@currlwidth=\dimen127
+\lst@column=\count122
+\lst@pos=\count123
+\lst@lostspace=\dimen128
+\lst@width=\dimen129
+\lst@newlines=\count124
+\lst@lineno=\count125
+\abovecaptionskip=\skip205
+\belowcaptionskip=\skip206
+\lst@maxwidth=\dimen130
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+\c@lstnumber=\count126
+\lst@skipnumbers=\count127
+\lst@framebox=\box56
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2014/09/06 1.5e listings configuration
+))
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\cancel\cancel.sty"
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mdwtools\mdwlist.sty"
+Package: mdwlist 1996/05/02 1.1 Various list-related things
+)
+   defining Unicode char U+00A0 (decimal 160)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\charter.sty"
+Package: charter 2005/04/12 PSNFSS-v9.2a (P.Dyballa) 
+)
+\Luiuc=\box57
+
+<logo.png, id=1, 904.178pt x 170.236pt>
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 52.
+(pdftex.def)             Requested size: 151.76659pt x 28.57347pt.
+
+Overfull \hbox (25.2941pt too wide) in paragraph at lines 52--52
+[][] 
+ []
+
+
+("C:\Users\rlc\Documents\macellum.dk\repo\business\startup competetion\cover_le
+tter_3.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Try loading font information for T1+bch on input line 82.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1bch.fd"
+File: t1bch.fd 2004/10/18 font definitions for T1/bch.
+)
+\AtBeginShipoutBox=\box58
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count128
+\scratchdimen=\dimen131
+\scratchbox=\box59
+\nofMPsegments=\count129
+\nofMParguments=\count130
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count131
+\MPscratchDim=\dimen132
+\MPnumerator=\count132
+\makeMPintoPDFobject=\count133
+\everyMPtoPDFconversion=\toks30
+)
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             macros/latex/contrib/pageslts/ 
+(lastpage)             or
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             install/macros/latex/contrib/pageslts.tds.zip
+(lastpage)             ! on input line 82.
+\c@lstlisting=\count134
+LaTeX Font Info:    Try loading font information for U+msa on input line 83.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 83.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) detected at line 83
+         
+ []
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 83.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+! Undefined control sequence.
+l.95 \subsection
+                {Customer Pain}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.100 \subsection
+                 {Business Idea}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.103 \subsubsection
+                    {Phase 1, Total Price of Catch}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.106 \subsubsection
+                    {Phase 2, Automatic Total Price of Catch}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.109 \subsubsection
+                    {Phase 3, Total Price of Journey}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.112 \subsubsection
+                    {Phase 4, Total Price of Journey + Estimated Price of Fi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.115 \subsubsection
+                    {Phase 5, Smart System for Auction Price Information}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[1
+
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/rlc/Documents/ma
+cellum.dk/repo/business/startup competetion/logo.png>]
+! Undefined control sequence.
+l.119 \subsubsection
+                    {Phase 6, Combine the Two}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.122 \subsection
+                 {Value Proposition}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.125 \subsection
+                 {Idea Protection}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.129 \subsection
+                 {Customer Profile}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.130 \subsection
+                 {Testing}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.131 \subsection
+                 {Market}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.141 \subsection
+                 {Competetion}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.148 \subsection
+                 {Competetive Advantages}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.151 \subsection
+                 {Strategic Partners}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.166 \subsection
+                 {Business Model}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.168 \subsubsection
+                    {Phase 1, Only the Fishermen}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.171 \subsubsection
+                    {Phase 2, The Fishermen and the Buyers}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.174 \subsubsection
+                    {Phase 3, The Fishermen, the Buyers and the Auction Houses}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.179 \subsection
+                 {Economies of scale}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[2]
+! Undefined control sequence.
+l.188 \subsection
+                 {Financing}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.193 \subsection
+                 {Risk Analysis}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.200 \subsection
+                 {Implementation Plan}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.203 \subsection
+                 {Marketing and sales}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.210 \rowcolors
+                {1}{white}{lightblue}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[3] 
+AED: lastpage setting LastPage
+
+("C:\Users\rlc\Documents\macellum.dk\repo\business\startup competetion\cover_le
+tter_3.aux") ) 
+Here is how much of TeX's memory you used:
+ 7213 strings out of 493921
+ 92613 string characters out of 3144882
+ 174961 words of memory out of 3000000
+ 10372 multiletter control sequences out of 15000+200000
+ 30387 words of font info for 50 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 37i,12n,45p,647b,548s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.en
+c} <C:\Users\rlc\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ec
+tt1000.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchb8
+a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchr8a.pf
+b>
+Output written on cover_letter_3.pdf (3 pages, 72265 bytes).
+PDF statistics:
+ 39 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+
