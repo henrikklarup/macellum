@@ -1,0 +1,22 @@
+\contentsline {section}{\numberline {1}Executive Summary}{3}
+\contentsline {section}{\numberline {2}Product and Service}{4}
+\contentsline {subsection}{\numberline {2.1}Customer Pain}{4}
+\contentsline {subsection}{\numberline {2.2}Business Idea}{4}
+\contentsline {subsection}{\numberline {2.3}Value Proposition}{5}
+\contentsline {subsection}{\numberline {2.4}Idea Protection}{5}
+\contentsline {section}{\numberline {3}Market and Costumer}{6}
+\contentsline {subsection}{\numberline {3.1}Customer Profile}{6}
+\contentsline {subsection}{\numberline {3.2}Testing}{6}
+\contentsline {section}{\numberline {4}Industry and Competetion}{7}
+\contentsline {subsection}{\numberline {4.1}Competetion}{7}
+\contentsline {subsection}{\numberline {4.2}Competetive Advantages}{7}
+\contentsline {subsection}{\numberline {4.3}Strategic Partners}{7}
+\contentsline {section}{\numberline {5}People and Organization}{9}
+\contentsline {section}{\numberline {6}Money and feasibility}{10}
+\contentsline {subsection}{\numberline {6.1}Business Model and Economies of Scale}{10}
+\contentsline {subsection}{\numberline {6.2}Financing}{10}
+\contentsline {subsection}{\numberline {6.3}Risk Analysis}{10}
+\contentsline {section}{\numberline {7}Implementation}{12}
+\contentsline {subsection}{\numberline {7.1}Implementation Plan}{12}
+\contentsline {subsection}{\numberline {7.2}Marketing and sales}{12}
+\contentsline {section}{\numberline {8}Budget}{13}
